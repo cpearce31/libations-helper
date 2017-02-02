@@ -89,7 +89,7 @@ function blankIngredients () {
     bev.drinks[i].procedure = '';
     for (let j = 0; j < bev.drinks[i].ingredients.length; j++) {
       let currentIng = bev.drinks[i].ingredients[j];
-      bev.drinks[i].amounts.currentIng = 1;
+      bev.drinks[i].amounts[currentIng] = 1;
     }
   }
   fs.writeFile('bev.json', JSON.stringify(bev));
