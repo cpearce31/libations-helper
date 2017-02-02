@@ -45,3 +45,42 @@ function writeDrinks () {
   }
   return output;
 }
+
+function tests () {
+
+  function uniq (a) {
+    var seen = {};
+    return a.filter(function (item) {
+      return seen.hasOwnProperty(item) ? false : (seen[item] = true);
+    });
+  }
+
+  function inANotB (a, b) {
+    return a.filter((elem, index) => {
+      if (b.indexOf(elem) === -1) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+  }
+
+  const bev = JSON.parse(fs.readFileSync('bev.json', 'utf-8'));
+  let usedIngredients = [];
+  let ingredients = [];
+  for (let i = 0; i < bev.drinks.length; i++) {
+    for (let j = 0; j < bev.drinks[i].ingredients.length; j++) {
+      usedIngredients.push(bev.drinks[i].ingredients[j]);
+    }
+  }
+  usedIngredients = uniq(usedIngredients);
+  for (let i = 0; i < bev.ingredients.length; i++) {
+    ingredients.push(bev.ingredients[i].name);
+  }
+  console.log('unused ingredients in json:');
+  console.log(inANotB(ingredients, usedIngredients));
+  console.log('used ingredients not in json:');
+  console.log(inANotB(usedIngredients, ingredients));
+}
+
+tests();

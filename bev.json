@@ -207,7 +207,7 @@
     }, {
         "name": "vesper",
         "id": 9,
-        "ingredients": ["vodka", "gin", "lillet", "aromatic bitter", "lemon peel"],
+        "ingredients": ["vodka", "gin", "lillet blanc", "aromatic bitters", "lemon peel"],
         "importance": 0
     }, {
         "name": "champagne cocktail",
@@ -272,7 +272,7 @@
     }, {
         "name": "jack rose",
         "id": 22,
-        "ingredients": ["apply brandy", "lemon juice", "grenadine"],
+        "ingredients": ["apple brandy", "lemon juice", "grenadine"],
         "importance": 0
     }, {
         "name": "mai tai",
@@ -302,7 +302,7 @@
     }, {
         "name": "white lady",
         "id": 28,
-        "ingredients": ["gin", "orange liquer", "lemon juice", "orange peel"],
+        "ingredients": ["gin", "orange liqueur", "lemon juice", "orange peel"],
         "importance": 0
     }, {
         "name": "south side",
@@ -327,7 +327,7 @@
     }, {
         "name": "gin and tonic",
         "id": 33,
-        "ingredients": ["gin", "tonic", "lime"],
+        "ingredients": ["gin", "tonic", "lime juice"],
         "importance": 0
     }, {
         "name": "bijou",
@@ -362,7 +362,7 @@
     }, {
         "name": "corpse reviver #2",
         "id": 40,
-        "ingredients": ["gin", "lemon juice", "orange liqueur", "lillet", "absinthe"],
+        "ingredients": ["gin", "lemon juice", "orange liqueur", "lillet blanc", "absinthe"],
         "importance": 0
     }, {
         "name": "vieux carre",
@@ -377,7 +377,7 @@
     }, {
         "name": "b & b",
         "id": 43,
-        "ingredients": ["cognac", " benedictine"],
+        "ingredients": ["cognac", "benedictine"],
         "importance": 0
     }, {
         "name": "dirty martini",
