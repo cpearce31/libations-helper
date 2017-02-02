@@ -47,7 +47,6 @@ function writeDrinks () {
 }
 
 function tests () {
-
   function uniq (a) {
     var seen = {};
     return a.filter(function (item) {
@@ -83,4 +82,17 @@ function tests () {
   console.log(inANotB(usedIngredients, ingredients));
 }
 
-tests();
+function blankIngredients () {
+  const bev = JSON.parse(fs.readFileSync('bev.json', 'utf-8'));
+  for (let i = 0; i < bev.drinks.length; i++) {
+    bev.drinks[i].amounts = {};
+    bev.drinks[i].procedure = '';
+    for (let j = 0; j < bev.drinks[i].ingredients.length; j++) {
+      let currentIng = bev.drinks[i].ingredients[j];
+      bev.drinks[i].amounts.currentIng = 1;
+    }
+  }
+  fs.writeFile('bev.json', JSON.stringify(bev));
+}
+
+blankIngredients();
