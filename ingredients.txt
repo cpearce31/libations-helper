@@ -1,0 +1,53 @@
+Gin
+Vodka
+Bourbon
+Rye
+Scotch
+Tequila
+Light rum
+Dark rum
+Spiced rum
+Sweet vermouth
+Dry vermouth
+Absinthe
+Aperol
+Aromatic bitters
+Apple Brandy
+Benedictine
+Simple syrup
+Lime juice
+Lemon juice
+Campari
+Sparkling Wine
+Prosecco
+Green Chartreuse
+Yellow Chartreuse
+Orange liqueur
+Cognac
+Fernet Branca
+Ginger beer
+Mint
+Lillet Blanc
+Grenadine
+Orange slice
+Pisco
+Orange bitters
+Mezcal
+Red wine
+Lemon peel
+Lime peel
+Orange peel
+Cherry
+Tonic
+Soda water
+Olive juice
+Olive
+Grapefruit juice
+maraschino liqueur
+sugar cube
+egg white
+lime wheel
+lemon wheel
+orgeat
+honey
+orange juice

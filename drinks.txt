@@ -1,0 +1,50 @@
+Gin Martini:Gin,Dry vermouth
+Vodka Martini:Vodka,Dry vermouth
+Old Fashioned:Rye,Aromatic bitters,Simple syrup
+Manhattan:bourbon,sweet Vermouth,aromatic bitters,cherry
+Negroni:gin,campari,sweet Vermouth
+boulevardier:rye,sweet vermouth,Campari
+martinez:gin,sweet vermouth,maraschino liqueur,orange bitters,orange peel
+americano:campari,sweet vermouth,soda water,orange slice
+sazerac:rye,absinthe,simple syrup,aromatic bitters,lemon peel
+vesper:vodka,gin,lillet,aromatic bitter,lemon peel
+champagne cocktail:sparkling wine,sugar cube,aromatic bitters,lemon peel
+aviation:gin,maraschino liqueur,lemon juice,Cherry
+millionaire:bourbon,orange liqueur,egg white,Grenadine,Absinthe
+french 75:Sparkling wine,lemon juice,simple syrup,gin,lemon peel
+gimlet:gin,lime juice,simple syrup,lime wheel
+gin rickey:gin,lime juice,simple syrup,soda water
+mint julep:bourbon,mint,simple syrup,soda water
+mojito:light rum,mint,lime juice,soda water,simple syrup,lime wheel
+new york sour:rye,lemon juice,simple syrup,red Wine
+whiskey sour:rye,lemon juice,simple syrup,lemon wheel
+hemingway daiquiri:light rum,lime juice,Grapefruit juice,maraschino liqueur,lime wheel
+daiquiri:light rum,lime juice,simple syrup,lime wheel
+jack rose:apply brandy,lemon juice,grenadine
+mai tai:dark rum,light rum,orgeat,orange liqueur,lime juice,simple Syrup
+sidecar:cognac,orange liqueur,simple syrup,lemon juice,orange peel
+pisco sour:pisco,lime juice,simple syrup,egg white
+dark and stormy:dark rum,ginger beer,lime juice,lime wheel
+moscow mule:vodka,ginger beer,lime juice,lime wheel
+white lady:gin,orange liquer,lemon juice,orange peel
+south side:gin,lemon juice,simple syrup,mint,soda water
+last word:gin,green chartreuse,maraschino liqueur,lime juice,lime wheel
+between the sheets:cognac,gin,orange Liqueur,lemon juice
+bee's knees:gin,lemon juice,honey,orange peel
+gin and tonic:gin,tonic,Lime
+bijou:gin,green Chartreuse,sweet vermouth,orange bitters
+planter's punch:dark rum,lime juice,lemon juice,Grenadine,simple Syrup
+blinker:rye,grapefruit juice,Grenadine
+brown derby:Grapefruit juice,bourbon,honey
+trinidad sour:Aromatic bitters,orgeat,lemon juice,Rye
+aperol spritz:sparkling wine,aperol,soda water,orange slice
+corpse reviver #2:gin,lemon juice,orange liqueur,lillet,Absinthe
+vieux carre:rye,cognac,sweet vermouth,Benedictine,aromatic bitters
+hanky panky:gin,sweet vermouth,fernet branca
+b & b:cognac, Benedictine
+dirty martini:gin,olive juice,dry vermouth,Olive
+tom collins:gin,lemon juice,simple syrup,soda water
+paloma:tequila,Grapefruit juice,simple syrup,soda water,lime juice
+rob roy:scotch,sweet vermouth,aromatic bitters
+death in the afternoon:Sparkling wine,absinthe
+ward eight:rye,lemon juice,Grenadine,orange juice,Cherry
