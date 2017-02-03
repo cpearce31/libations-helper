@@ -165,54 +165,56 @@
         "ingredients": ["gin", "dry vermouth"],
         "importance": 0,
         "amounts": {
-            "gin": 1,
-            "dry vermouth": 1
+            "gin": 2.5,
+            "dry vermouth": 0.5
         },
-        "procedure": ""
+        "procedure": "Stir gin and vermouth in a mix glassing with ice. Strain into a chilled cocktail glass. Garnish with a lemon twist or olives."
     }, {
         "name": "vodka martini",
         "id": 1,
         "ingredients": ["vodka", "dry vermouth"],
         "importance": 0,
         "amounts": {
-            "vodka": 1,
-            "dry vermouth": 1
+            "vodka": 2.5,
+            "dry vermouth": 0.5
         },
-        "procedure": ""
+        "procedure": "Stir vodka and vermouth in a mix glassing with ice. Strain into a chilled cocktail glass. Garnish with a lemon twist or olives."
     }, {
         "name": "old fashioned",
         "id": 2,
-        "ingredients": ["rye", "aromatic bitters", "simple syrup"],
+        "ingredients": ["rye", "aromatic bitters", "simple syrup", "orange peel"],
         "importance": 0,
         "amounts": {
-            "rye": 1,
-            "aromatic bitters": 1,
-            "simple syrup": 1
+            "rye": 2,
+            "aromatic bitters": "3 dashes",
+            "simple syrup": 0.5,
+            "orange peel": 0
         },
-        "procedure": ""
+        "procedure": "Put rye, simple syrup, and bitters in a rocks glass, add ice, and stir. Twist the orange peel and drop it in."
     }, {
         "name": "manhattan",
         "id": 3,
         "ingredients": ["bourbon", "sweet vermouth", "aromatic bitters", "cherry"],
         "importance": 0,
         "amounts": {
-            "bourbon": 1,
+            "bourbon": 2.5,
             "sweet vermouth": 1,
-            "aromatic bitters": 1,
-            "cherry": 1
+            "aromatic bitters": "3 dashes",
+            "cherry": 0
         },
-        "procedure": ""
+        "procedure": "Pour the bourbon, vermouth, and bitters in a mixing glass with ice and stir. Strain into a chilled cocktail glass and drop the cherry in."
     }, {
         "name": "negroni",
         "id": 4,
-        "ingredients": ["gin", "campari", "sweet vermouth"],
+        "ingredients": ["gin", "campari", "sweet vermouth", "orange peel"],
         "importance": 0,
         "amounts": {
             "gin": 1,
             "campari": 1,
-            "sweet vermouth": 1
+            "sweet vermouth": 1,
+            "orange peel": 0
         },
-        "procedure": ""
+        "procedure": "Pour gin, Campari, and sweet vermouth into a mixing glass with ice and stir. Strain into a chilled cocktail glass and drop the orange peel in."
     }, {
         "name": "boulevardier",
         "id": 5,
@@ -223,281 +225,279 @@
             "sweet vermouth": 1,
             "campari": 1
         },
-        "procedure": ""
+        "procedure": "Pour rye, Campari, and sweet vermouth into a mixing glass with ice and stir. Strain into a chilled cocktail glass and drop the orange peel in."
     }, {
         "name": "martinez",
         "id": 6,
         "ingredients": ["gin", "sweet vermouth", "maraschino liqueur", "orange bitters", "orange peel"],
         "importance": 0,
         "amounts": {
-            "gin": 1,
+            "gin": 2,
             "sweet vermouth": 1,
-            "maraschino liqueur": 1,
-            "orange bitters": 1,
-            "orange peel": 1
+            "maraschino liqueur": 0.5,
+            "orange bitters": "1 dash",
+            "orange peel": 0
         },
-        "procedure": ""
+        "procedure": "Pour all the ingredients into a mixing glass with ice and stir. Strain into a chilled cocktail glass and drop lemon twist in."
     }, {
         "name": "americano",
         "id": 7,
         "ingredients": ["campari", "sweet vermouth", "soda water", "orange slice"],
         "importance": 0,
         "amounts": {
-            "campari": 1,
-            "sweet vermouth": 1,
-            "soda water": 1,
-            "orange slice": 1
+            "campari": 1.5,
+            "sweet vermouth": 1.5,
+            "soda water": 3,
+            "orange slice": 0
         },
-        "procedure": ""
+        "procedure": "Pour Campari and vermouth into a shaker. Add orange slice and ice and shake gently. Pour into a collins glass."
     }, {
         "name": "sazerac",
         "id": 8,
         "ingredients": ["rye", "absinthe", "simple syrup", "aromatic bitters", "lemon peel"],
         "importance": 0,
         "amounts": {
-            "rye": 1,
-            "absinthe": 1,
-            "simple syrup": 1,
-            "aromatic bitters": 1,
-            "lemon peel": 1
+            "rye": 2.5,
+            "absinthe": 0.5,
+            "simple syrup": 0.5,
+            "aromatic bitters": "3 dashes",
+            "lemon peel": 0
         },
-        "procedure": ""
+        "procedure": "Pour absinthe into a chilled rocks glass and tilt the glass so the absinthe touches all the sides. Pour the absinthe out. Pour rye, simple syrup, and bitters in a mixing glass with ice. Stir and strain into the now-empty chilled rocks glass. Rub lemon peel on the rim and drop it in."
     }, {
         "name": "vesper",
         "id": 9,
-        "ingredients": ["vodka", "gin", "lillet blanc", "aromatic bitters", "lemon peel"],
+        "ingredients": ["vodka", "gin", "lillet blanc", "lemon peel"],
         "importance": 0,
         "amounts": {
-            "vodka": 1,
+            "vodka": 2,
             "gin": 1,
-            "lillet blanc": 1,
-            "aromatic bitters": 1,
-            "lemon peel": 1
+            "lillet blanc": 0.5,
+            "lemon peel": 0
         },
-        "procedure": ""
+        "procedure": "Pour all the ingredients into a mixing glass with ice and stir. Strain into a chilled cocktail glass and drop lemon twist in."
     }, {
         "name": "champagne cocktail",
         "id": 10,
         "ingredients": ["sparkling wine", "sugar cube", "aromatic bitters", "lemon peel"],
         "importance": 0,
         "amounts": {
-            "sparkling wine": 1,
+            "sparkling wine": "1 glass full",
             "sugar cube": 1,
-            "aromatic bitters": 1,
-            "lemon peel": 1
+            "aromatic bitters": "5 dashes",
+            "lemon peel": 0
         },
-        "procedure": ""
+        "procedure": "On a plate, drop bitters on top of sugar cube. Add it to the full glass of chilled sparkling wine. Drop the lemon peel in."
     }, {
         "name": "aviation",
         "id": 11,
         "ingredients": ["gin", "maraschino liqueur", "lemon juice", "cherry"],
         "importance": 0,
         "amounts": {
-            "gin": 1,
-            "maraschino liqueur": 1,
-            "lemon juice": 1,
-            "cherry": 1
+            "gin": 2,
+            "maraschino liqueur": 0.5,
+            "lemon juice": 0.75,
+            "cherry": 0
         },
-        "procedure": ""
+        "procedure": "Add gin, maraschino, lemon juice to a mixing glass with ice. Stir, strain into a chilled cocktail glass, and drop in the cherry."
     }, {
         "name": "millionaire",
         "id": 12,
         "ingredients": ["bourbon", "orange liqueur", "egg white", "grenadine", "absinthe"],
         "importance": 0,
         "amounts": {
-            "bourbon": 1,
-            "orange liqueur": 1,
+            "bourbon": 2,
+            "orange liqueur": 0.75,
             "egg white": 1,
-            "grenadine": 1,
-            "absinthe": 1
+            "grenadine": 0.5,
+            "absinthe": 0.25
         },
-        "procedure": ""
+        "procedure": "Pour all ingreidents into a mixing glass with no ice, and shake vigorously. Add ice, and shake again. Strain into a chilled cocktail glass."
     }, {
         "name": "french 75",
         "id": 13,
         "ingredients": ["sparkling wine", "lemon juice", "simple syrup", "gin", "lemon peel"],
         "importance": 0,
         "amounts": {
-            "sparkling wine": 1,
-            "lemon juice": 1,
-            "simple syrup": 1,
-            "gin": 1,
+            "sparkling wine": 3,
+            "lemon juice": 0.5,
+            "simple syrup": 0.5,
+            "gin": 1.5,
             "lemon peel": 1
         },
-        "procedure": ""
+        "procedure": "Pour gin, lemon juice, and syrup into a shaker with ice. Shake and strain into a champagne glass. Top with sparkling wine and drop lemon peel in."
     }, {
         "name": "gimlet",
         "id": 14,
         "ingredients": ["gin", "lime juice", "simple syrup", "lime wheel"],
         "importance": 0,
         "amounts": {
-            "gin": 1,
-            "lime juice": 1,
-            "simple syrup": 1,
-            "lime wheel": 1
+            "gin": 2,
+            "lime juice": 0.5,
+            "simple syrup": 0.5,
+            "lime wheel": 0
         },
-        "procedure": ""
+        "procedure": "Pour gin, lime juice, and simple syrup into a shaker with ice. Shake and strain into a chilled cocktail glass. Garnish with lime wheel."
     }, {
         "name": "gin rickey",
         "id": 15,
         "ingredients": ["gin", "lime juice", "simple syrup", "soda water"],
         "importance": 0,
         "amounts": {
-            "gin": 1,
-            "lime juice": 1,
-            "simple syrup": 1,
-            "soda water": 1
+            "gin": 2,
+            "lime juice": 0.5,
+            "simple syrup": 0.5,
+            "soda water": 2
         },
-        "procedure": ""
+        "procedure": "Pour all ingredients into a collins glass with ice and stir."
     }, {
         "name": "mint julep",
         "id": 16,
         "ingredients": ["bourbon", "mint", "simple syrup", "soda water"],
         "importance": 0,
         "amounts": {
-            "bourbon": 1,
-            "mint": 1,
-            "simple syrup": 1,
+            "bourbon": 2.5,
+            "mint": "5-10 leaves",
+            "simple syrup": 0.75,
             "soda water": 1
         },
-        "procedure": ""
+        "procedure": "Put mint and simple syrup in the bottom of a chilled rocks glass and muddle. Add bourbon and ice and stir. Top with splash of clubs soda and garnish with a mint sprig."
     }, {
         "name": "mojito",
         "id": 17,
         "ingredients": ["light rum", "mint", "lime juice", "soda water", "simple syrup", "lime wheel"],
         "importance": 0,
         "amounts": {
-            "light rum": 1,
-            "mint": 1,
+            "light rum": 2,
+            "mint": "5-10 leaves",
             "lime juice": 1,
             "soda water": 1,
-            "simple syrup": 1,
-            "lime wheel": 1
+            "simple syrup": 0.75,
+            "lime wheel": 0
         },
-        "procedure": ""
+        "procedure": "Muddle mint and simple syrup in a collins glass. Add ice, rum, and lime juice. Cover with a shaker and shake. Pour into collins glass, add more ice, and top with soda water. Garnish with more mint and a lime wheel."
     }, {
         "name": "new york sour",
         "id": 18,
         "ingredients": ["rye", "lemon juice", "simple syrup", "red wine"],
         "importance": 0,
         "amounts": {
-            "rye": 1,
+            "rye": 2,
             "lemon juice": 1,
             "simple syrup": 1,
-            "red wine": 1
+            "red wine": 0.5
         },
-        "procedure": ""
+        "procedure": "Pour rye, simple syrup, and lemon juice into a shaker with ice. Shake and strain into a rocks glass. Add more ice, hold a spoon over the glass, and pour the red wine onto the spoon so that it floats on the surface."
     }, {
         "name": "whiskey sour",
         "id": 19,
         "ingredients": ["rye", "lemon juice", "simple syrup", "lemon wheel"],
         "importance": 0,
         "amounts": {
-            "rye": 1,
+            "rye": 2.5,
             "lemon juice": 1,
             "simple syrup": 1,
-            "lemon wheel": 1
-        },
-        "procedure": ""
+            "lemon wheel": 0        },
+        "procedure": "Pour rye, lemon juice, and simple syrup into a shaker with ice. Shake and strain into a rocks glass with more ice. Garnish with lemon wheel."
     }, {
         "name": "hemingway daiquiri",
         "id": 20,
         "ingredients": ["light rum", "lime juice", "grapefruit juice", "maraschino liqueur", "lime wheel"],
         "importance": 0,
         "amounts": {
-            "light rum": 1,
-            "lime juice": 1,
-            "grapefruit juice": 1,
-            "maraschino liqueur": 1,
-            "lime wheel": 1
+            "light rum": 2,
+            "lime juice": 0.75,
+            "grapefruit juice": 0.5,
+            "maraschino liqueur": 0.5,
+            "lime wheel": 0
         },
-        "procedure": ""
+        "procedure": "Pour rum, lime juice, grapefruit juice, and maraschino into a shaker with ice. Shake and strain into a chilled cocktail glass. Garnish with lime wheel."
     }, {
         "name": "daiquiri",
         "id": 21,
         "ingredients": ["light rum", "lime juice", "simple syrup", "lime wheel"],
         "importance": 0,
         "amounts": {
-            "light rum": 1,
+            "light rum": 2,
             "lime juice": 1,
-            "simple syrup": 1,
-            "lime wheel": 1
+            "simple syrup": 0.5,
+            "lime wheel": 0
         },
-        "procedure": ""
+        "procedure": "Pour rum, lime juice, and simple syrup into a shaker with ice. Shake and strain into a chilled cocktail glass. Garnish with lime wheel."
     }, {
         "name": "jack rose",
         "id": 22,
-        "ingredients": ["apple brandy", "lemon juice", "grenadine"],
+        "ingredients": ["apple brandy", "lemon juice", "grenadine", "lemon peel"],
         "importance": 0,
         "amounts": {
-            "apple brandy": 1,
-            "lemon juice": 1,
-            "grenadine": 1
+            "apple brandy": 2,
+            "lemon juice": 0.75,
+            "grenadine": 0.75,
+            "lemon peel": 0
         },
-        "procedure": ""
+        "procedure": "Pour brandy, lemon juice, and grenadine into a shaker with ice. Shake and strain into a chilled cocktail glass. Garnish with lemon peel."
     }, {
         "name": "mai tai",
         "id": 23,
-        "ingredients": ["dark rum", "light rum", "orgeat", "orange liqueur", "lime juice", "simple syrup"],
+        "ingredients": ["dark rum", "light rum", "orgeat", "orange liqueur", "lime juice", "lime wheel"],
         "importance": 0,
         "amounts": {
             "dark rum": 1,
             "light rum": 1,
-            "orgeat": 1,
-            "orange liqueur": 1,
+            "orgeat": 0.5,
+            "orange liqueur": 0.5,
             "lime juice": 1,
-            "simple syrup": 1
+            "lime wheel": 0
         },
-        "procedure": ""
+        "procedure": "Add all ingredients to shaker filled with ice. Shake and strain into a rocks glass with more ice. Garnish with lime wheel."
     }, {
         "name": "sidecar",
         "id": 24,
-        "ingredients": ["cognac", "orange liqueur", "simple syrup", "lemon juice", "orange peel"],
+        "ingredients": ["cognac", "orange liqueur", "lemon juice", "orange peel"],
         "importance": 0,
         "amounts": {
-            "cognac": 1,
-            "orange liqueur": 1,
-            "simple syrup": 1,
-            "lemon juice": 1,
-            "orange peel": 1
+            "cognac": 1.5,
+            "orange liqueur": 0.75,
+            "lemon juice": 0.75,
+            "orange peel": 0
         },
-        "procedure": ""
+        "procedure": "Pour cognac, orange liqueur, and lemon juice into a shaker with ice. Shake and strain into a chilled cocktail glass. Garnish with orange peel. Optionally, before making the drink, rub lemon juice around the rim of the glass and dip into a plate of sugar to coat the rim."
     }, {
         "name": "pisco sour",
         "id": 25,
         "ingredients": ["pisco", "lime juice", "simple syrup", "egg white"],
         "importance": 0,
         "amounts": {
-            "pisco": 1,
+            "pisco": 2,
             "lime juice": 1,
             "simple syrup": 1,
             "egg white": 1
         },
-        "procedure": ""
+        "procedure": "Add pisco, lime juice, simple syrup, and egg white to shaker without ice. Shake vigorously. Add ice, and shake again. Strain into a chilled cocktail glass."
     }, {
         "name": "dark and stormy",
         "id": 26,
         "ingredients": ["dark rum", "ginger beer", "lime juice", "lime wheel"],
         "importance": 0,
         "amounts": {
-            "dark rum": 1,
-            "ginger beer": 1,
-            "lime juice": 1,
-            "lime wheel": 1
+            "dark rum": 2,
+            "ginger beer": 4,
+            "lime juice": 0.5,
+            "lime wheel": 0
         },
-        "procedure": ""
+        "procedure": "Pour ginger beer and lime juice into a collins glass with ice. Stir briefly, then gently pour rum on top so it floats. Garnish with lime wheel."
     }, {
         "name": "moscow mule",
         "id": 27,
         "ingredients": ["vodka", "ginger beer", "lime juice", "lime wheel"],
         "importance": 0,
         "amounts": {
-            "vodka": 1,
-            "ginger beer": 1,
-            "lime juice": 1,
-            "lime wheel": 1
+            "vodka": 1.5,
+            "ginger beer": 4,
+            "lime juice": 0.5,
+            "lime wheel": 0
         },
-        "procedure": ""
+        "procedure": "Pour vodka, lime juice, and ginger beer into a rocks glass or copper cup, add ice, and stir briefly. Garnish with lime wheel."
     }, {
         "name": "white lady",
         "id": 28,
