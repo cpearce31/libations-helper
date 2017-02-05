@@ -504,109 +504,109 @@
         "ingredients": ["gin", "orange liqueur", "lemon juice", "orange peel"],
         "importance": 0,
         "amounts": {
-            "gin": 1,
+            "gin": 2,
             "orange liqueur": 1,
             "lemon juice": 1,
-            "orange peel": 1
+            "orange peel": 0
         },
-        "procedure": ""
+        "procedure": "Pour gin, orange liqueur, and lemon juice into a shaker with ice. Shake and strain into a chilled cocktail glass. Garnish with orange peel."
     }, {
         "name": "south side",
         "id": 29,
         "ingredients": ["gin", "lemon juice", "simple syrup", "mint", "soda water"],
         "importance": 0,
         "amounts": {
-            "gin": 1,
+            "gin": 2,
             "lemon juice": 1,
-            "simple syrup": 1,
-            "mint": 1,
-            "soda water": 1
+            "simple syrup": 0.5,
+            "mint": "2 sprigs",
+            "soda water": "splash"
         },
-        "procedure": ""
+        "procedure": "Put gin, lemon juice, simple syrup, and mint into a shaker with ice. Shake vigorously, then add club soda to shaker. Strain into a chilled cocktail glass."
     }, {
         "name": "last word",
         "id": 30,
         "ingredients": ["gin", "green chartreuse", "maraschino liqueur", "lime juice", "lime wheel"],
         "importance": 0,
         "amounts": {
-            "gin": 1,
-            "green chartreuse": 1,
-            "maraschino liqueur": 1,
-            "lime juice": 1,
-            "lime wheel": 1
+            "gin": 0.75,
+            "green chartreuse": 0.75,
+            "maraschino liqueur": 0.75,
+            "lime juice": 0.75,
+            "lime wheel": 0
         },
-        "procedure": ""
+        "procedure": "Pour maraschino, gin, Chartreuse, and lime juice into a shaker with ice. Shake and strain into chilled cocktail glass. Garnish with lime wheel."
     }, {
         "name": "between the sheets",
         "id": 31,
-        "ingredients": ["cognac", "gin", "orange liqueur", "lemon juice"],
+        "ingredients": ["cognac", "light rum", "orange liqueur", "lemon juice"],
         "importance": 0,
         "amounts": {
             "cognac": 1,
-            "gin": 1,
+            "light rum": 1,
             "orange liqueur": 1,
-            "lemon juice": 1
+            "lemon juice": 0.75
         },
-        "procedure": ""
+        "procedure": "Pour all ingredients into a shaker with ice. Shake and strain into a chilled cocktail glass."
     }, {
         "name": "bee's knees",
         "id": 32,
-        "ingredients": ["gin", "lemon juice", "honey", "orange peel"],
+        "ingredients": ["gin", "lemon juice", "honey", "lemon peel"],
         "importance": 0,
         "amounts": {
-            "gin": 1,
-            "lemon juice": 1,
-            "honey": 1,
-            "orange peel": 1
+            "gin": 2,
+            "lemon juice": 0.75,
+            "honey": 0.5,
+            "lemon peel": 0
         },
-        "procedure": ""
+        "procedure": "Pour gin, lemon juice, and honey into a shaker with ice. Shake and strain into a chilled cocktail glass and drop in the lemon peel."
     }, {
         "name": "gin and tonic",
         "id": 33,
         "ingredients": ["gin", "tonic", "lime juice"],
         "importance": 0,
         "amounts": {
-            "gin": 1,
-            "tonic": 1,
-            "lime juice": 1
+            "gin": 2,
+            "tonic": 3,
+            "lime juice": 0.5
         },
-        "procedure": ""
+        "procedure": "Add gin, tonic, and lime juice to a collins glass with ice. Stir."
     }, {
         "name": "bijou",
         "id": 34,
         "ingredients": ["gin", "green chartreuse", "sweet vermouth", "orange bitters"],
         "importance": 0,
         "amounts": {
-            "gin": 1,
-            "green chartreuse": 1,
+            "gin": 1.5,
+            "green chartreuse": 0.75,
             "sweet vermouth": 1,
-            "orange bitters": 1
+            "orange bitters": "2 dashes"
         },
-        "procedure": ""
+        "procedure": "Pour all ingredients into a mixing glass with ice. Stir and strain into a chilled cocktail glass."
     }, {
         "name": "planter's punch",
         "id": 35,
         "ingredients": ["dark rum", "lime juice", "lemon juice", "grenadine", "simple syrup"],
         "importance": 0,
         "amounts": {
-            "dark rum": 1,
+            "dark rum": 3,
             "lime juice": 1,
-            "lemon juice": 1,
-            "grenadine": 1,
-            "simple syrup": 1
+            "lemon juice": 0.5,
+            "grenadine": 0.5,
+            "simple syrup": 0.5
         },
-        "procedure": ""
+        "procedure": "Pour all ingreidents into a mixing glass with ice. Stir and strain into a collins glass with more ice."
     }, {
         "name": "blinker",
         "id": 36,
         "ingredients": ["rye", "grapefruit juice", "grenadine"],
         "importance": 0,
         "amounts": {
-            "rye": 1,
+            "rye": 1.5,
             "grapefruit juice": 1,
-            "grenadine": 1
+            "grenadine": 0.5
         },
-        "procedure": ""
+        "procedure": "Pour rye, grapefruit juice, and grenadine into a shaker with ice. Shake and strain into chilled cocktail glass with ice."
     }, {
         "name": "brown derby",
         "id": 37,
@@ -624,61 +624,62 @@
         "ingredients": ["aromatic bitters", "orgeat", "lemon juice", "rye"],
         "importance": 0,
         "amounts": {
-            "aromatic bitters": 1,
+            "aromatic bitters": 1.5,
             "orgeat": 1,
-            "lemon juice": 1,
-            "rye": 1
+            "lemon juice": 0.75,
+            "rye": 0.5
         },
-        "procedure": ""
+        "procedure": "Pour bitters, orgeat, lemon juice, and rye into a shaker with ice. Shake vigorously and strain into a chilled cocktail glass."
     }, {
         "name": "aperol spritz",
         "id": 39,
-        "ingredients": ["sparkling wine", "aperol", "soda water", "orange slice"],
+        "ingredients": ["prosecco", "aperol", "soda water", "orange slice"],
         "importance": 0,
         "amounts": {
-            "sparkling wine": 1,
-            "aperol": 1,
+            "prosecco": 4,
+            "aperol": 2,
             "soda water": 1,
             "orange slice": 1
         },
-        "procedure": ""
+        "procedure": "Pour all ingredients into a collins glass with ice and stir . Squeeze orange slice into the drink and drop it in."
     }, {
         "name": "corpse reviver #2",
         "id": 40,
         "ingredients": ["gin", "lemon juice", "orange liqueur", "lillet blanc", "absinthe"],
         "importance": 0,
         "amounts": {
-            "gin": 1,
-            "lemon juice": 1,
-            "orange liqueur": 1,
-            "lillet blanc": 1,
-            "absinthe": 1
+            "gin": 0.75,
+            "lemon juice": 0.75,
+            "orange liqueur": 0.75,
+            "lillet blanc": 0.75,
+            "absinthe": "a dash"
         },
-        "procedure": ""
+        "procedure": "Pour all ingredients into a shaker with ice. Shake and strain into a chilled cocktail glass."
     }, {
         "name": "vieux carre",
         "id": 41,
         "ingredients": ["rye", "cognac", "sweet vermouth", "benedictine", "aromatic bitters"],
         "importance": 0,
         "amounts": {
-            "rye": 1,
-            "cognac": 1,
-            "sweet vermouth": 1,
-            "benedictine": 1,
-            "aromatic bitters": 1
+            "rye": 0.75,
+            "cognac": 0.75,
+            "sweet vermouth": 0.75,
+            "benedictine": 0.5,
+            "aromatic bitters": "4 dashes"
         },
-        "procedure": ""
+        "procedure": "Add all ingredients to a rocks glass with plenty of ice and stir."
     }, {
         "name": "hanky panky",
         "id": 42,
-        "ingredients": ["gin", "sweet vermouth", "fernet branca"],
+        "ingredients": ["gin", "sweet vermouth", "fernet branca", "orange peel"],
         "importance": 0,
         "amounts": {
-            "gin": 1,
-            "sweet vermouth": 1,
-            "fernet branca": 1
+            "gin": 1.5,
+            "sweet vermouth": 1.5,
+            "fernet branca": 0.5,
+            "orange peel": 0
         },
-        "procedure": ""
+        "procedure": "Pour all ingredients into a mixing glass with ice. Stir and strain into a chilled cocktail glass. Garnish with orange peel."
     }, {
         "name": "b & b",
         "id": 43,
@@ -688,90 +689,78 @@
             "cognac": 1,
             "benedictine": 1
         },
-        "procedure": ""
+        "procedure": "Pour cognac and Benedictine into a rocks glass and stir briefly."
     }, {
         "name": "dirty martini",
         "id": 44,
         "ingredients": ["gin", "olive juice", "dry vermouth", "olive"],
         "importance": 0,
         "amounts": {
-            "gin": 1,
-            "olive juice": 1,
-            "dry vermouth": 1,
-            "olive": 1
+            "gin": 2.5,
+            "olive juice": 0.5,
+            "dry vermouth": 0.5,
+            "olive": 3
         },
-        "procedure": ""
+        "procedure": "Pour all ingredients into a mixing glass with ice. Stir and strain into a chilled cocktail glass. Garnish with olives."
     }, {
         "name": "tom collins",
         "id": 45,
         "ingredients": ["gin", "lemon juice", "simple syrup", "soda water"],
         "importance": 0,
         "amounts": {
-            "gin": 1,
-            "lemon juice": 1,
-            "simple syrup": 1,
-            "soda water": 1
+            "gin": 2,
+            "lemon juice": 0.75,
+            "simple syrup": 0.5,
+            "soda water": 2
         },
-        "procedure": ""
+        "procedure": "Add gin, lemon juice, and simple syrup to a shaker with ice. Shake and strain into a collins glass with ice. Top with soda water."
     }, {
         "name": "paloma",
         "id": 46,
         "ingredients": ["tequila", "grapefruit juice", "simple syrup", "soda water", "lime juice"],
         "importance": 0,
         "amounts": {
-            "tequila": 1,
+            "tequila": 2,
             "grapefruit juice": 1,
-            "simple syrup": 1,
+            "simple syrup": 0.5,
             "soda water": 1,
-            "lime juice": 1
+            "lime juice": 0.75
         },
-        "procedure": ""
+        "procedure": "Pour tequila, grapefruit juice, simple syrup and lime juice into a shaker with ice. Shake and strain into a collins glass with ice. Top with soda water."
     }, {
         "name": "rob roy",
         "id": 47,
-        "ingredients": ["scotch", "sweet vermouth", "aromatic bitters"],
+        "ingredients": ["scotch", "sweet vermouth", "aromatic bitters", "cherry"],
         "importance": 0,
         "amounts": {
-            "scotch": 1,
+            "scotch": 2,
             "sweet vermouth": 1,
-            "aromatic bitters": 1
+            "aromatic bitters": "a dash",
+            "cherry": 0
         },
-        "procedure": ""
+        "procedure": "Pour all ingredients into a mixing glass with ice. Stir and strain into a chilled cocktail glass. Drop in the cherry."
     }, {
         "name": "death in the afternoon",
         "id": 48,
         "ingredients": ["sparkling wine", "absinthe"],
         "importance": 0,
         "amounts": {
-            "sparkling wine": 1,
-            "absinthe": 1
+            "sparkling wine": 4.5,
+            "absinthe": 1.5
         },
-        "procedure": ""
+        "procedure": "Pour absinthe and sparkling wine into a champagne glass."
     }, {
         "name": "ward eight",
         "id": 49,
         "ingredients": ["rye", "lemon juice", "grenadine", "orange juice", "cherry"],
         "importance": 0,
         "amounts": {
-            "rye": 1,
-            "lemon juice": 1,
-            "grenadine": 1,
-            "orange juice": 1,
-            "cherry": 1
+            "rye": 2,
+            "lemon juice": 0.5,
+            "grenadine": 0.5,
+            "orange juice": 0.5,
+            "cherry": 0
         },
-        "procedure": ""
-    }, {
-        "name": "ward eight",
-        "id": 49,
-        "ingredients": ["rye", "lemon juice", "grenadine", "orange juice", "cherry"],
-        "importance": 0,
-        "amounts": {
-            "rye": 1,
-            "lemon juice": 1,
-            "grenadine": 1,
-            "orange juice": 1,
-            "cherry": 1
-        },
-        "procedure": ""
+        "procedure": "Pour rye, juices, and grenadine into a shaker with ice. Shake and strain into a chilled cocktail glass. Drop in cherry."
     }]
 }
