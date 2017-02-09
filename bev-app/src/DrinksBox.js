@@ -10,7 +10,8 @@ const constructDrink = (elem) => {
     <Drink
       key={key}
       name={elem.name}
-      ingredients={elem.ingredients.join(' ')}
+      ingredients={elem.ingredients.join(', ')}
+      missingCount={elem.missingCount ? elem.missingCount : 0}
     />
   );
 };
