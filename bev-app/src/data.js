@@ -226,7 +226,7 @@ const data = {
             "sweet vermouth": 1,
             "maraschino liqueur": 0.5,
             "orange bitters": "1 dash",
-            "orange peel": 0
+            "orange peel": 1
         },
         "procedure": "Pour all the ingredients into a mixing glass with ice and stir. Strain into a chilled cocktail glass and drop lemon twist in."
     }, {
@@ -238,7 +238,7 @@ const data = {
             "campari": 1.5,
             "sweet vermouth": 1.5,
             "soda water": 3,
-            "orange slice": 0
+            "orange slice": 1
         },
         "procedure": "Pour Campari and vermouth into a shaker. Add orange slice and ice and shake gently. Pour into a collins glass."
     }, {
@@ -251,7 +251,7 @@ const data = {
             "absinthe": 0.5,
             "simple syrup": 0.5,
             "aromatic bitters": "3 dashes",
-            "lemon peel": 0
+            "lemon peel": 1
         },
         "procedure": "Pour absinthe into a chilled rocks glass and tilt the glass so the absinthe touches all the sides. Pour the absinthe out. Pour rye, simple syrup, and bitters in a mixing glass with ice. Stir and strain into the now-empty chilled rocks glass. Rub lemon peel on the rim and drop it in."
     }, {
@@ -263,7 +263,7 @@ const data = {
             "vodka": 2,
             "gin": 1,
             "lillet blanc": 0.5,
-            "lemon peel": 0
+            "lemon peel": 1
         },
         "procedure": "Pour all the ingredients into a mixing glass with ice and stir. Strain into a chilled cocktail glass and drop lemon twist in."
     }, {
@@ -275,7 +275,7 @@ const data = {
             "sparkling wine": "1 glass full",
             "sugar cube": 1,
             "aromatic bitters": "5 dashes",
-            "lemon peel": 0
+            "lemon peel": 1
         },
         "procedure": "On a plate, drop bitters on top of sugar cube. Add it to the full glass of chilled sparkling wine. Drop the lemon peel in."
     }, {
@@ -287,7 +287,7 @@ const data = {
             "gin": 2,
             "maraschino liqueur": 0.5,
             "lemon juice": 0.75,
-            "cherry": 0
+            "cherry": 1
         },
         "procedure": "Add gin, maraschino, lemon juice to a mixing glass with ice. Stir, strain into a chilled cocktail glass, and drop in the cherry."
     }, {
@@ -325,7 +325,7 @@ const data = {
             "gin": 2,
             "lime juice": 0.5,
             "simple syrup": 0.5,
-            "lime wheel": 0
+            "lime wheel": 1
         },
         "procedure": "Pour gin, lime juice, and simple syrup into a shaker with ice. Shake and strain into a chilled cocktail glass. Garnish with lime wheel."
     }, {
@@ -363,7 +363,7 @@ const data = {
             "lime juice": 1,
             "soda water": 1,
             "simple syrup": 0.75,
-            "lime wheel": 0
+            "lime wheel": 1
         },
         "procedure": "Muddle mint and simple syrup in a collins glass. Add ice, rum, and lime juice. Cover with a shaker and shake. Pour into collins glass, add more ice, and top with soda water. Garnish with more mint and a lime wheel."
     }, {

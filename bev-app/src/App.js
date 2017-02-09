@@ -3,7 +3,7 @@ import data from './data.js';
 import SearchBox from './SearchBox.js';
 import DrinksBox from './DrinksBox.js';
 import Bar from './Bar.js';
-import Modal from 'react-modal';
+import DrinkModal from './DrinkModal.js';
 import {canIMake} from './helpers.js';
 
 class App extends Component {
@@ -15,19 +15,16 @@ class App extends Component {
       cantMake: [],
       bar: [],
       drinkModalOpen: false,
-      drinkModalContent: {
-        name: '',
-        amounts: {},
-        procedure: ''
-      },
+      drinkModalName: data.drinks[0].name,
+      drinkModalAmounts: data.drinks[0].amounts,
+      drinkModalProcedure: data.drinks[0].procedure,
       ingModalOpen: false,
-      ingModalContent: {
-        name: '',
-        description: '',
-        link: ''
-      }
+      ingModalName: '',
+      ingModalDescription: '',
+      ingModalLink: ''
     };
     this.handleClicks = this.handleClicks.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
 
   handleClicks (event) {
@@ -57,19 +54,53 @@ class App extends Component {
           bar: newBar
         });
         break;
+
+      case 'drink':
+        for (let i = 0; i < data.drinks.length; i++) {
+          if (data.drinks[i].name === target.dataset.name) {
+            this.setState({
+              drinkModalOpen: true,
+              drinkModalName: data.drinks[i].name,
+              drinkModalAmounts: data.drinks[i].amounts,
+              drinkModalProcedure: data.drinks[i].procedure
+            });
+          }
+        }
+        break;
+
+      case 'drinkInfo':
+        target = event.target.parentNode;
+        for (let i = 0; i < data.drinks.length; i++) {
+          if (data.drinks[i].name === target.dataset.name) {
+            this.setState({
+              drinkModalOpen: true,
+              drinkModalName: data.drinks[i].name,
+              drinkModalAmounts: data.drinks[i].amounts,
+              drinkModalProcedure: data.drinks[i].procedure
+            });
+          }
+        }
+        break;
     }
   }
 
+  closeModal () {
+    this.setState({
+      drinkModalOpen: false,
+      ingModalOpen: false
+    });
+  }
+
   render () {
-    let drinkModal = '';
     return (
       <div onClick={this.handleClicks}>
-        <Modal
+        <DrinkModal
           isOpen={this.state.drinkModalOpen}
-          contentLabel='drinkModal'
-        >
-          {drinkModal}
-        </Modal>
+          drinkName={this.state.drinkModalName}
+          amounts={this.state.drinkModalAmounts}
+          procedure={this.state.drinkModalProcedure}
+          closeModal={this.closeModal}
+        />
         <SearchBox addIngredient={this.addIngredient}/>
         <Bar bar={this.state.bar} />
         <DrinksBox

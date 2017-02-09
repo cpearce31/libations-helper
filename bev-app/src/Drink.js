@@ -13,17 +13,25 @@ let drinkStyle = {
 const Drink = (props) => {
   if (props.canMake) {
     return (
-      <div style={Object.assign(drinkStyle, props.style)}>
-        <h3>{props.name}</h3>
-        <p>{props.ingredients}</p>
+      <div
+        className='drink'
+        style={Object.assign(drinkStyle, props.style)}
+        data-name={props.name}
+      >
+        <h3 className='drinkInfo' >{props.name}</h3>
+        <p className='drinkInfo' >{props.ingredients}</p>
       </div>
     );
   } else {
     return (
-      <div style={drinkStyle}>
-        <h3>{props.name}</h3>
-        <p>{props.ingredients}</p>
-        <h4>Missing {props.missingCount} ingredients</h4>
+      <div
+        className='drink'
+        style={drinkStyle}
+        data-name={props.name}
+      >
+        <h3 className='drinkInfo' >{props.name}</h3>
+        <p className='drinkInfo' >{props.ingredients}</p>
+        <h4 className='drinkInfo' >Missing {props.missingCount} ingredients</h4>
       </div>
     );
   }
