@@ -25,6 +25,7 @@ class App extends Component {
     };
     this.handleClicks = this.handleClicks.bind(this);
     this.closeModal = this.closeModal.bind(this);
+    this.openModal = this.openModal.bind(this);
   }
 
   handleClicks (event) {
@@ -54,33 +55,24 @@ class App extends Component {
           bar: newBar
         });
         break;
+    }
+  }
 
-      case 'drink':
-        for (let i = 0; i < data.drinks.length; i++) {
-          if (data.drinks[i].name === target.dataset.name) {
-            this.setState({
-              drinkModalOpen: true,
-              drinkModalName: data.drinks[i].name,
-              drinkModalAmounts: data.drinks[i].amounts,
-              drinkModalProcedure: data.drinks[i].procedure
-            });
-          }
+  openModal (type, target) {
+    if (type === 'drink') {
+      if (target.className === 'drinkInfo') {
+        target = target.parentNode;
+      }
+      for (let i = 0; i < data.drinks.length; i++) {
+        if (data.drinks[i].name === target.dataset.name) {
+          this.setState({
+            drinkModalOpen: true,
+            drinkModalName: data.drinks[i].name,
+            drinkModalAmounts: data.drinks[i].amounts,
+            drinkModalProcedure: data.drinks[i].procedure
+          });
         }
-        break;
-
-      case 'drinkInfo':
-        target = event.target.parentNode;
-        for (let i = 0; i < data.drinks.length; i++) {
-          if (data.drinks[i].name === target.dataset.name) {
-            this.setState({
-              drinkModalOpen: true,
-              drinkModalName: data.drinks[i].name,
-              drinkModalAmounts: data.drinks[i].amounts,
-              drinkModalProcedure: data.drinks[i].procedure
-            });
-          }
-        }
-        break;
+      }
     }
   }
 
@@ -104,6 +96,7 @@ class App extends Component {
         <SearchBox addIngredient={this.addIngredient}/>
         <Bar bar={this.state.bar} />
         <DrinksBox
+          openModal={this.openModal}
           canMake={canIMake(this.state.bar, data.drinks).canMake}
           cantMake={canIMake(this.state.bar, data.drinks).cantMake}
         />

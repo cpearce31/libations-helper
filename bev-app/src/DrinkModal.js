@@ -14,7 +14,6 @@ const modalStyle = {
 const DrinkModal = (props) => {
   return (
     <Modal
-      closeModal={props.closeModal}
       isOpen={props.isOpen}
       contentLabel='drinkModal'
       style={modalStyle}

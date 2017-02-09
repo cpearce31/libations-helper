@@ -17,6 +17,9 @@ const Drink = (props) => {
         className='drink'
         style={Object.assign(drinkStyle, props.style)}
         data-name={props.name}
+        onClick={(event) => {
+          props.openModal('drink', event.target);
+        }}
       >
         <h3 className='drinkInfo' >{props.name}</h3>
         <p className='drinkInfo' >{props.ingredients}</p>
@@ -28,6 +31,9 @@ const Drink = (props) => {
         className='drink'
         style={drinkStyle}
         data-name={props.name}
+        onClick={(event) => {
+          props.openModal('drink', event.target);
+        }}
       >
         <h3 className='drinkInfo' >{props.name}</h3>
         <p className='drinkInfo' >{props.ingredients}</p>

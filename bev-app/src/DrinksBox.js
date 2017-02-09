@@ -1,21 +1,20 @@
 import React from 'react';
 import Drink from './Drink.js';
 
-let key = 0;
-
-const constructDrink = (elem) => {
-  key++;
-  return (
-    <Drink
-      key={key}
-      name={elem.name}
-      ingredients={elem.ingredients.join(', ')}
-      missingCount={elem.missingCount ? elem.missingCount : 0}
-    />
-  );
-};
-
 const DrinksBox = (props) => {
+  let key = 0;
+  const constructDrink = (elem) => {
+    key++;
+    return (
+      <Drink
+        key={key}
+        name={elem.name}
+        ingredients={elem.ingredients.join(', ')}
+        missingCount={elem.missingCount ? elem.missingCount : 0}
+        openModal={props.openModal}
+      />
+    );
+  };
   return (
     <div>
       <h2>You can make:</h2>
