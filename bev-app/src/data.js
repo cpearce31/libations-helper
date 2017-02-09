@@ -3,151 +3,200 @@
 const data = {
     "ingredients": [{
         "name": "gin",
-        "id": 0
+        "id": 0,
+        "terms": ["bombay saphire", "beefeater", "dry gin", "tangueray"]
     }, {
         "name": "vodka",
-        "id": 1
+        "id": 1,
+        "terms": ["grey goose", "ketel one", "stoli", "absolut", "smirnoff"]
     }, {
         "name": "bourbon",
-        "id": 2
+        "id": 2,
+        "terms": ["whiskey", "whisky", "bulleit", "jack daniels", "knob creek", "makers mark"]
     }, {
         "name": "rye",
-        "id": 3
+        "id": 3,
+        "terms": ["whiskey", "whisky", "old overholt"]
     }, {
         "name": "scotch",
-        "id": 4
+        "id": 4,
+        "terms": ["blended scotch", "whiskey", "whisky"]
     }, {
         "name": "tequila",
-        "id": 5
+        "id": 5,
+        "terms": []
     }, {
         "name": "light rum",
-        "id": 6
+        "id": 6,
+        "terms": ["white rum", "bacardi", "captain morgan"]
     }, {
         "name": "dark rum",
-        "id": 7
+        "id": 7,
+        "terms": ["myers"]
     }, {
         "name": "sweet vermouth",
-        "id": 9
+        "id": 9,
+        "terms": []
     }, {
         "name": "dry vermouth",
-        "id": 10
+        "id": 10,
+        "terms": []
     }, {
         "name": "absinthe",
-        "id": 11
+        "id": 11,
+        "terms": ["pernod", "pastis"]
     }, {
         "name": "aperol",
-        "id": 12
+        "id": 12,
+        "terms": []
     }, {
         "name": "aromatic bitters",
-        "id": 13
+        "id": 13,
+        "terms": ["angostura", "peychauds"]
     }, {
         "name": "apple brandy",
-        "id": 14
+        "id": 14,
+        "terms": ["calvados"]
     }, {
         "name": "benedictine",
-        "id": 15
+        "id": 15,
+        "terms": []
     }, {
         "name": "simple syrup",
-        "id": 16
+        "id": 16,
+        "terms": []
     }, {
         "name": "lime juice",
-        "id": 17
+        "id": 17,
+        "terms": []
     }, {
         "name": "lemon juice",
-        "id": 18
+        "id": 18,
+        "terms": []
     }, {
         "name": "campari",
-        "id": 19
+        "id": 19,
+        "terms": []
     }, {
         "name": "sparkling wine",
-        "id": 20
+        "id": 20,
+        "terms": ["champagne"]
     }, {
         "name": "prosecco",
-        "id": 21
+        "id": 21,
+        "terms": []
     }, {
         "name": "green chartreuse",
-        "id": 22
+        "id": 22,
+        "terms": []
     }, {
         "name": "orange liqueur",
-        "id": 24
+        "id": 24,
+        "terms": ["triple sec", "cointreau", "grand marnier"]
     }, {
         "name": "cognac",
-        "id": 25
+        "id": 25,
+        "terms": ["brandy"]
     }, {
         "name": "fernet branca",
-        "id": 26
+        "id": 26,
+        "terms": []
     }, {
         "name": "ginger beer",
-        "id": 27
+        "id": 27,
+        "terms": ["ginger ale"]
     }, {
         "name": "mint",
-        "id": 28
+        "id": 28,
+        "terms": []
     }, {
         "name": "lillet blanc",
-        "id": 29
+        "id": 29,
+        "terms": []
     }, {
         "name": "grenadine",
-        "id": 30
+        "id": 30,
+        "terms": []
     }, {
         "name": "orange slice",
-        "id": 31
+        "id": 31,
+        "terms": []
     }, {
         "name": "pisco",
-        "id": 32
+        "id": 32,
+        "terms": []
     }, {
         "name": "orange bitters",
-        "id": 33
+        "id": 33,
+        "terms": []
     }, {
         "name": "red wine",
-        "id": 35
+        "id": 35,
+        "terms": []
     }, {
         "name": "lemon peel",
-        "id": 36
+        "id": 36,
+        "terms": []
     }, {
         "name": "orange peel",
-        "id": 38
+        "id": 38,
+        "terms": []
     }, {
         "name": "cherry",
-        "id": 39
+        "id": 39,
+        "terms": ["maraschino"]
     }, {
         "name": "tonic",
-        "id": 40
+        "id": 40,
+        "terms": []
     }, {
         "name": "soda water",
-        "id": 41
+        "id": 41,
+        "terms": ["club soda", "seltzer"]
     }, {
         "name": "olive juice",
-        "id": 42
+        "id": 42,
+        "terms": []
     }, {
         "name": "olive",
-        "id": 43
+        "id": 43,
+        "terms": []
     }, {
         "name": "grapefruit juice",
-        "id": 44
+        "id": 44,
+        "terms": []
     }, {
         "name": "maraschino liqueur",
-        "id": 45
+        "id": 45,
+        "terms": ["luxardo"]
     }, {
         "name": "sugar cube",
-        "id": 46
+        "id": 46,
+        "terms": []
     }, {
         "name": "egg white",
-        "id": 47
+        "id": 47,
+        "terms": []
     }, {
         "name": "lime wheel",
-        "id": 48
+        "id": 48,
+        "terms": []
     }, {
         "name": "lemon wheel",
-        "id": 49
+        "id": 49,
+        "terms": []
     }, {
         "name": "orgeat",
-        "id": 50
+        "id": 50,
+        "terms": []
     }, {
         "name": "honey",
-        "id": 51
+        "id": 51,
+        "terms": []
     }, {
         "name": "orange juice",
-        "id": 52
+        "id": 52,
+        "terms": []
     }],
     "drinks": [{
         "name": "gin martini",

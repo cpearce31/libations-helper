@@ -38,6 +38,13 @@ const autocomplete = (input) => {
     for (let i = 0; i < data.ingredients.length; i++) {
       if (data.ingredients[i].name.includes(input.toLowerCase())) {
         suggestions.push(data.ingredients[i]);
+      } else {
+        for (let j = 0; j < data.ingredients[i].terms.length; j++) {
+          if (data.ingredients[i].terms[j].includes(input.toLowerCase())) {
+            suggestions.push(data.ingredients[i]);
+            break;
+          }
+        }
       }
     }
     for (let i = 0; i < data.drinks.length; i++) {
