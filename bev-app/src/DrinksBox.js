@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import data from './data.js';
 import Drink from './Drink.js';
 
@@ -15,30 +15,19 @@ const constructDrink = (elem) => {
   );
 };
 
-class DrinksBox extends Component {
-
-  constructor (props) {
-    super(props);
-    this.state = {
-      canMake: [],
-      cantMake: data.drinks
-    };
-  }
-
-  render () {
-    return (
+const DrinksBox = (props) => {
+  return (
+    <div>
+      <h2>You can make:</h2>
       <div>
-        <h2>You can make:</h2>
-        <div>
-          {this.state.canMake.map(constructDrink)}
-        </div>
-        <h2>Almost there:</h2>
-        <div>
-          {this.state.cantMake.map(constructDrink)}
-        </div>
+        {props.canMake.map(constructDrink)}
       </div>
-    );
-  }
-}
+      <h2>Almost there:</h2>
+      <div>
+        {props.cantMake.map(constructDrink)}
+      </div>
+    </div>
+  );
+};
 
 export default DrinksBox;

@@ -1,9 +1,12 @@
 import React from 'react';
 
 let drinkStyle = {
-  height: 100,
-  width: 100,
-  border: '1px solid gray'
+  height: 200,
+  width: 200,
+  border: '1px solid gray',
+  display: 'inline-block',
+  margin: 20
+
 };
 
 const Drink = (props) => {

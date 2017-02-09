@@ -3,6 +3,7 @@ import data from './data.js';
 import SearchBox from './SearchBox.js';
 import DrinksBox from './DrinksBox.js';
 import Bar from './Bar.js';
+import canIMake from './canimake.js';
 
 class App extends Component {
 
@@ -10,7 +11,7 @@ class App extends Component {
     super(props);
     this.state = {
       canMake: [],
-      cantMake: data.drinks,
+      cantMake: [],
       bar: []
     };
     this.handleClicks = this.handleClicks.bind(this);
@@ -48,10 +49,13 @@ class App extends Component {
 
   render () {
     return (
-      <div onClick = {this.handleClicks}>
+      <div onClick={this.handleClicks}>
         <SearchBox addIngredient={this.addIngredient}/>
         <Bar bar={this.state.bar} />
-        <DrinksBox/>
+        <DrinksBox
+          canMake={canIMake(this.state.bar, data.drinks).canMake}
+          cantMake={canIMake(this.state.bar, data.drinks).cantMake}
+        />
       </div>
     );
   }
