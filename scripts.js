@@ -95,4 +95,7 @@ function blankIngredients () {
   fs.writeFile('bev.json', JSON.stringify(bev));
 }
 
-blankIngredients();
+function drinksWith (ingredient) {
+  const bev = JSON.parse(fs.readFileSync('bev.json', 'utf-8'));
+
+}

@@ -1,4 +1,6 @@
-{
+/* eslint-disable */
+
+const data = {
     "ingredients": [{
         "name": "gin",
         "id": 0
@@ -751,4 +753,6 @@
         },
         "procedure": "Pour rye, juices, and grenadine into a shaker with ice. Shake and strain into a chilled cocktail glass. Drop in cherry."
     }]
-}
+};
+
+export default data;
