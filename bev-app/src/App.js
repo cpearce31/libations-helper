@@ -37,7 +37,8 @@ class App extends Component {
       case 'removeIngredient':
         ingredient = target.previousSibling.textContent;
         let index = this.state.bar.indexOf(ingredient);
-        newBar = this.state.bar.splice(index, 1);
+        newBar = this.state.bar;
+        newBar.splice(index, 1);
         this.setState({
           bar: newBar
         });
