@@ -21,7 +21,6 @@ class App extends Component {
       drinkModalProcedure: data.drinks[0].procedure,
       ingModalOpen: false,
       ingModalName: '',
-      ingModalDescription: '',
       ingModalLink: ''
     };
     this.closeModal = this.closeModal.bind(this);
@@ -72,7 +71,6 @@ class App extends Component {
           this.setState({
             ingModalOpen: true,
             ingModalName: data.ingredients[i].name,
-            ingModalDescription: data.ingredients[i].description,
             ingModalLink: data.ingredients[i].link
           });
         }
@@ -93,7 +91,6 @@ class App extends Component {
         <IngredientModal
           isOpen={this.state.ingModalOpen}
           ingName={this.state.ingModalName}
-          description={this.state.ingModalDescription}
           url={this.state.ingModalLink}
           closeModal={this.closeModal}
         />

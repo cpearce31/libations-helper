@@ -19,7 +19,6 @@ const IngredientModal = (props) => {
     >
       <button onClick={props.closeModal}>X</button>
       <h3>{props.ingName}</h3>
-      <p>{props.description}</p>
       <a href={props.url}>more info</a>
     </Modal>
   );
