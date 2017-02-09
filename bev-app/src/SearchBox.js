@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import autocomplete from './autocomplete.js';
+import {autocomplete} from './helpers.js';
 import Result from './Result.js';
 
 const inputStyle = {

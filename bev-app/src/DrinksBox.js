@@ -1,5 +1,4 @@
 import React from 'react';
-import data from './data.js';
 import Drink from './Drink.js';
 
 let key = 0;

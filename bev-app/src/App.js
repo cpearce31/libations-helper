@@ -3,7 +3,8 @@ import data from './data.js';
 import SearchBox from './SearchBox.js';
 import DrinksBox from './DrinksBox.js';
 import Bar from './Bar.js';
-import canIMake from './canimake.js';
+import Modal from 'react-modal';
+import {canIMake} from './helpers.js';
 
 class App extends Component {
 
@@ -12,7 +13,19 @@ class App extends Component {
     this.state = {
       canMake: [],
       cantMake: [],
-      bar: []
+      bar: [],
+      drinkModalOpen: false,
+      drinkModalContent: {
+        name: '',
+        amounts: {},
+        procedure: ''
+      },
+      ingModalOpen: false,
+      ingModalContent: {
+        name: '',
+        description: '',
+        link: ''
+      }
     };
     this.handleClicks = this.handleClicks.bind(this);
   }
@@ -48,8 +61,15 @@ class App extends Component {
   }
 
   render () {
+    let drinkModal = '';
     return (
       <div onClick={this.handleClicks}>
+        <Modal
+          isOpen={this.state.drinkModalOpen}
+          contentLabel='drinkModal'
+        >
+          {drinkModal}
+        </Modal>
         <SearchBox addIngredient={this.addIngredient}/>
         <Bar bar={this.state.bar} />
         <DrinksBox
