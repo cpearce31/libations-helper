@@ -34,7 +34,13 @@ const Result = (props) => {
     );
   } else {
     return (
-      <div style={style}>
+      <div
+        style={style}
+        data-name={props.name}
+        onClick={(event) => {
+          props.openModal('drink', event.target);
+        }}
+      >
         <span>{props.name}</span>
         <span style={spanStyle}>Cocktail</span>
       </div>

@@ -38,6 +38,7 @@ class SearchBox extends Component {
                       name={elem.name}
                       key={key}
                       addIngredient={this.props.addIngredient}
+                      openModal={this.props.openModal}
                    />;
           })}
         </div>

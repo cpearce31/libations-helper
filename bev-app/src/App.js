@@ -85,7 +85,10 @@ class App extends Component {
           procedure={this.state.drinkModalProcedure}
           closeModal={this.closeModal}
         />
-        <SearchBox addIngredient={this.addIngredient}/>
+        <SearchBox
+          addIngredient={this.addIngredient}
+          openModal={this.openModal}
+        />
         <Bar
           bar={this.state.bar}
           removeIngredient={this.removeIngredient}
