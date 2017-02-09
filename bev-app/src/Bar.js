@@ -13,6 +13,7 @@ const Bar = (props) => {
             <Ingredient
               key={key}
               name={elem}
+              removeIngredient={props.removeIngredient}
             />
           );
         })}

@@ -37,6 +37,7 @@ class SearchBox extends Component {
                       isIngredient={!elem.procedure}
                       name={elem.name}
                       key={key}
+                      addIngredient={this.props.addIngredient}
                    />;
           })}
         </div>

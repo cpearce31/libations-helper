@@ -13,7 +13,12 @@ const Ingredient = (props) => {
   return (
     <div style={divStyle}>
       <span>{props.name}</span>
-      <button type='button' className='removeIngredient' style={btnStyle}>X</button>
+      <button
+        type='button'
+        className='removeIngredient'
+        style={btnStyle}
+        onClick={(event) => props.removeIngredient(event.target)}
+      >X</button>
     </div>
   );
 };

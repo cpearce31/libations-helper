@@ -21,7 +21,14 @@ const Result = (props) => {
     return (
       <div style={style}>
         <span>{props.name}</span>
-        <button style={btnStyle} type='button' className='addIngredient'>Add</button>
+        <button
+          style={btnStyle}
+          type='button'
+          className='addIngredient'
+          onClick={(event) => {
+            props.addIngredient(event.target);
+          }}
+        >Add</button>
         <span style={spanStyle}>Ingredient</span>
       </div>
     );

@@ -23,38 +23,30 @@ class App extends Component {
       ingModalDescription: '',
       ingModalLink: ''
     };
-    this.handleClicks = this.handleClicks.bind(this);
     this.closeModal = this.closeModal.bind(this);
     this.openModal = this.openModal.bind(this);
+    this.addIngredient = this.addIngredient.bind(this);
+    this.removeIngredient = this.removeIngredient.bind(this);
   }
 
-  handleClicks (event) {
-    let target = event.target;
-    let targetClass = target.className;
-    let ingredient;
-    let newBar;
-    switch (targetClass) {
+  removeIngredient (target) {
+    let ingredient = target.previousSibling.textContent;
+    let index = this.state.bar.indexOf(ingredient);
+    let newBar = this.state.bar;
+    newBar.splice(index, 1);
+    this.setState({
+      bar: newBar
+    });
+  }
 
-      case 'addIngredient':
-        ingredient = target.previousSibling.textContent;
-        if (this.state.bar.indexOf(ingredient) === -1) {
-          newBar = this.state.bar.slice(0);
-          newBar.push(ingredient);
-          this.setState({
-            bar: newBar
-          });
-        }
-        break;
-
-      case 'removeIngredient':
-        ingredient = target.previousSibling.textContent;
-        let index = this.state.bar.indexOf(ingredient);
-        newBar = this.state.bar;
-        newBar.splice(index, 1);
-        this.setState({
-          bar: newBar
-        });
-        break;
+  addIngredient (target) {
+    let ingredient = target.previousSibling.textContent;
+    if (this.state.bar.indexOf(ingredient) === -1) {
+      let newBar = this.state.bar.slice(0);
+      newBar.push(ingredient);
+      this.setState({
+        bar: newBar
+      });
     }
   }
 
@@ -94,7 +86,10 @@ class App extends Component {
           closeModal={this.closeModal}
         />
         <SearchBox addIngredient={this.addIngredient}/>
-        <Bar bar={this.state.bar} />
+        <Bar
+          bar={this.state.bar}
+          removeIngredient={this.removeIngredient}
+        />
         <DrinksBox
           openModal={this.openModal}
           canMake={canIMake(this.state.bar, data.drinks).canMake}
