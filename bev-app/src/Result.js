@@ -19,12 +19,16 @@ const Result = (props) => {
   const style = Object.assign(resultStyle, props.style);
   if (props.isIngredient) {
     return (
-      <div style={style}>
+      <div
+        data-name={props.name}
+        style={style}
+        onClick={(event) => {
+          props.openModal('ingredient', event.target);
+        }}
+      >
         <span>{props.name}</span>
         <button
           style={btnStyle}
-          type='button'
-          className='addIngredient'
           onClick={(event) => {
             props.addIngredient(event.target);
           }}

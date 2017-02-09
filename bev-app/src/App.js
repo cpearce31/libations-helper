@@ -5,6 +5,7 @@ import DrinksBox from './DrinksBox.js';
 import Bar from './Bar.js';
 import DrinkModal from './DrinkModal.js';
 import {canIMake} from './helpers.js';
+import IngredientModal from './IngredientModal.js';
 
 class App extends Component {
 
@@ -65,6 +66,17 @@ class App extends Component {
           });
         }
       }
+    } else if (type === 'ingredient') {
+      for (let i = 0; i < data.ingredients.length; i++) {
+        if (data.ingredients[i].name === target.dataset.name) {
+          this.setState({
+            ingModalOpen: true,
+            ingModalName: data.ingredients[i].name,
+            ingModalDescription: data.ingredients[i].description,
+            ingModalLink: data.ingredients[i].link
+          });
+        }
+      }
     }
   }
 
@@ -77,7 +89,14 @@ class App extends Component {
 
   render () {
     return (
-      <div onClick={this.handleClicks}>
+      <div>
+        <IngredientModal
+          isOpen={this.state.ingModalOpen}
+          ingName={this.state.ingModalName}
+          description={this.state.ingModalDescription}
+          url={this.state.ingModalLink}
+          closeModal={this.closeModal}
+        />
         <DrinkModal
           isOpen={this.state.drinkModalOpen}
           drinkName={this.state.drinkModalName}
