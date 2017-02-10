@@ -14,6 +14,7 @@ const Bar = (props) => {
               key={key}
               name={elem}
               removeIngredient={props.removeIngredient}
+              openModal={props.openModal}
             />
           );
         })}

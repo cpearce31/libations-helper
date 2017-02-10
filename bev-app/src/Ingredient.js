@@ -11,7 +11,11 @@ const divStyle = {
 
 const Ingredient = (props) => {
   return (
-    <div style={divStyle}>
+    <div
+      style={divStyle}
+      onClick={(event) => props.openModal('ingredient', event.target)}
+      data-name={props.name}
+    >
       <span>{props.name}</span>
       <button
         type='button'

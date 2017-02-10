@@ -93,6 +93,7 @@ class App extends Component {
           ingName={this.state.ingModalName}
           url={this.state.ingModalLink}
           closeModal={this.closeModal}
+          openModal={this.openModal}
         />
         <DrinkModal
           isOpen={this.state.drinkModalOpen}
@@ -108,6 +109,7 @@ class App extends Component {
         <Bar
           bar={this.state.bar}
           removeIngredient={this.removeIngredient}
+          openModal={this.openModal}
         />
         <DrinksBox
           openModal={this.openModal}

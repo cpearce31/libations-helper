@@ -1,4 +1,5 @@
 import data from './data.js';
+import React from 'react';
 
 const canIMake = (bar, drinks) => {
   let cantMake = [];
@@ -76,4 +77,36 @@ const formatAmount = (amount) => {
   }
 };
 
-export {autocomplete, canIMake, formatAmount};
+const JSXCommas = (array) => {
+  let newArr = array.slice(0);
+  for (let i = 1; i < (array.length * 2) - 1; i += 2) {
+    newArr.splice(i, 0, <span key={i * 10}>, </span>);
+  }
+  return newArr;
+};
+
+const usedIn = (ingredient, props) => {
+  let results = [];
+  for (let i = 0; i < data.drinks.length; i++) {
+    for (let j = 0; j < data.drinks[i].ingredients.length; j++) {
+      if (data.drinks[i].ingredients[j] === ingredient) {
+        results.push(data.drinks[i].name);
+      }
+    }
+  }
+  let jsxResults = results.map((elem, i) => {
+    return (
+      <span
+        data-name={elem}
+        key={i * 342}
+        onClick={(event) => {
+          props.closeModal();
+          props.openModal('drink', event.target);
+        }}
+      >{elem}</span>
+    );
+  });
+  return JSXCommas(jsxResults);
+};
+
+export {autocomplete, canIMake, formatAmount, usedIn};

@@ -1,5 +1,6 @@
 import Modal from 'react-modal';
 import React from 'react';
+import {usedIn} from './helpers.js';
 
 const modalStyle = {
   content: {
@@ -19,6 +20,7 @@ const IngredientModal = (props) => {
     >
       <button onClick={props.closeModal}>X</button>
       <h3>{props.ingName}</h3>
+      <p>used in: {usedIn(props.ingName, props)}</p>
       <a href={props.url}>more info</a>
     </Modal>
   );
