@@ -8,6 +8,8 @@ import {canIMake} from './helpers.js';
 import IngredientModal from './IngredientModal.js';
 import SuggestionBox from './SuggestionBox.js';
 
+var globalSelf;
+
 class App extends Component {
 
   constructor (props) {
@@ -36,13 +38,41 @@ class App extends Component {
         'sparkling wine',
         'egg white',
         'mint'
-      ]
+      ],
+      dimensions: {x: window.innerWidth, y: window.innerHeight},
+      viewWidth: window.innerWidth,
+      viewHeight: window.innerHeight,
+      resizeTimeout: null
     };
     this.closeModal = this.closeModal.bind(this);
     this.openModal = this.openModal.bind(this);
     this.addIngredient = this.addIngredient.bind(this);
     this.removeIngredient = this.removeIngredient.bind(this);
     this.removeSuggestion = this.removeSuggestion.bind(this);
+    this.resize = this.resize.bind(this);
+    this.componentDidMount = this.componentDidMount.bind(this);
+  }
+
+  resize () {
+    if (!this.state.resizeTimeout) {
+      let timeout = setTimeout(() => {
+        let dimensions = {x: window.innerWidth, y: window.innerHeight};
+        this.setState({
+          resizeTimeout: null,
+          dimensions: dimensions
+        });
+      }, 66);
+      this.setState({
+        resizeTimeout: timeout
+      });
+    }
+  }
+
+  componentDidMount () {
+    globalSelf = this;
+    window.addEventListener('resize', () => {
+      globalSelf.resize();
+    }, false);
   }
 
   removeIngredient (target) {
@@ -124,6 +154,7 @@ class App extends Component {
           url={this.state.ingModalLink}
           closeModal={this.closeModal}
           openModal={this.openModal}
+          dimensions={this.state.dimensions}
         />
         <DrinkModal
           isOpen={this.state.drinkModalOpen}
@@ -131,24 +162,29 @@ class App extends Component {
           amounts={this.state.drinkModalAmounts}
           procedure={this.state.drinkModalProcedure}
           closeModal={this.closeModal}
+          dimensions={this.state.dimensions}
         />
         <SearchBox
           addIngredient={this.addIngredient}
           openModal={this.openModal}
+          dimensions={this.state.dimensions}
         />
         <Bar
           bar={this.state.bar}
           removeIngredient={this.removeIngredient}
           openModal={this.openModal}
+          dimensions={this.state.dimensions}
         />
         <SuggestionBox
           suggestions={this.state.suggestions}
           removeSuggestion={this.removeSuggestion}
+          dimensions={this.state.dimensions}
         />
         <DrinksBox
           openModal={this.openModal}
           canMake={canIMake(this.state.bar, data.drinks).canMake}
           cantMake={canIMake(this.state.bar, data.drinks).cantMake}
+          dimensions={this.state.dimensions}
         />
       </div>
     );

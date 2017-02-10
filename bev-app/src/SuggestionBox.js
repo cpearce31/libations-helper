@@ -38,7 +38,6 @@ const style = {
 };
 
 const SuggestionBox = (props) => {
-  console.log(props.suggestions);
   const renderSuggestions = () => {
     let JSXResults = [];
     for (let i = 0; i < suggestions.length; i++) {
