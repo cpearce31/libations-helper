@@ -6,14 +6,13 @@ import Bar from './Bar.js';
 import DrinkModal from './DrinkModal.js';
 import {canIMake} from './helpers.js';
 import IngredientModal from './IngredientModal.js';
+import SuggestionBox from './SuggestionBox.js';
 
 class App extends Component {
 
   constructor (props) {
     super(props);
     this.state = {
-      canMake: [],
-      cantMake: [],
       bar: [],
       drinkModalOpen: false,
       drinkModalName: data.drinks[0].name,
@@ -21,12 +20,29 @@ class App extends Component {
       drinkModalProcedure: data.drinks[0].procedure,
       ingModalOpen: false,
       ingModalName: '',
-      ingModalLink: ''
+      ingModalLink: '',
+      suggestions: [
+        'simple syrup',
+        'lemon juice',
+        'lemon peel',
+        'lemon wheel',
+        'soda water',
+        'rye',
+        'gin',
+        'lime juice',
+        'lime wheel',
+        'orange juice',
+        'grapefruit juice',
+        'sparkling wine',
+        'egg white',
+        'mint'
+      ]
     };
     this.closeModal = this.closeModal.bind(this);
     this.openModal = this.openModal.bind(this);
     this.addIngredient = this.addIngredient.bind(this);
     this.removeIngredient = this.removeIngredient.bind(this);
+    this.removeSuggestion = this.removeSuggestion.bind(this);
   }
 
   removeIngredient (target) {
@@ -43,10 +59,24 @@ class App extends Component {
     let ingredient = target.previousSibling.textContent;
     if (this.state.bar.indexOf(ingredient) === -1) {
       let newBar = this.state.bar.slice(0);
+      this.removeSuggestion(ingredient);
       newBar.push(ingredient);
       this.setState({
         bar: newBar
       });
+    }
+  }
+
+  removeSuggestion (ingredients) {
+    for (let i = 0; i < ingredients.length; i++) {
+      let suggestIndex = this.state.suggestions.indexOf(ingredients[i]);
+      if (suggestIndex !== -1) {
+        let newSuggestions = this.state.suggestions;
+        newSuggestions.splice(suggestIndex, 1);
+        this.setState({
+          suggestions: newSuggestions
+        });
+      }
     }
   }
 
@@ -110,6 +140,10 @@ class App extends Component {
           bar={this.state.bar}
           removeIngredient={this.removeIngredient}
           openModal={this.openModal}
+        />
+        <SuggestionBox
+          suggestions={this.state.suggestions}
+          removeSuggestion={this.removeSuggestion}
         />
         <DrinksBox
           openModal={this.openModal}

@@ -37,7 +37,7 @@ const Drink = (props) => {
       >
         <h3 className='drinkInfo' >{props.name}</h3>
         <p className='drinkInfo' >{props.ingredients}</p>
-        <h4 className='drinkInfo' >Missing {props.missingCount} ingredients</h4>
+        <h4 className='drinkInfo' >missing {props.missingCount} ingredients</h4>
       </div>
     );
   }

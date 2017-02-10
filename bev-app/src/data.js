@@ -386,7 +386,7 @@ const data = {
             "gin": 2,
             "maraschino liqueur": 0.5,
             "lemon juice": 0.75,
-            "cherry": 1
+            "cherry": 0
         },
         "procedure": "Add gin, maraschino, lemon juice to a mixing glass with ice. Stir, strain into a chilled cocktail glass, and drop in the cherry."
     }, {

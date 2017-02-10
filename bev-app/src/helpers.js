@@ -77,6 +77,7 @@ const formatAmount = (amount) => {
   }
 };
 
+// adds the correct number of commas between JSX elements in an array
 const JSXCommas = (array) => {
   let newArr = array.slice(0);
   for (let i = 1; i < (array.length * 2) - 1; i += 2) {
@@ -85,6 +86,9 @@ const JSXCommas = (array) => {
   return newArr;
 };
 
+// returns an array of JSX elements representing all the cocktails a given
+// ingredient is used in. If no props object is given, it returns the *number*
+// of drinks containing the ingredient
 const usedIn = (ingredient, props) => {
   let results = [];
   for (let i = 0; i < data.drinks.length; i++) {
@@ -93,6 +97,9 @@ const usedIn = (ingredient, props) => {
         results.push(data.drinks[i].name);
       }
     }
+  }
+  if (!props) {
+    return results.length;
   }
   let jsxResults = results.map((elem, i) => {
     return (
