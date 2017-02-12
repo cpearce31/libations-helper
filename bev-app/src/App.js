@@ -7,6 +7,7 @@ import DrinkModal from './DrinkModal.js';
 import {canIMake} from './helpers.js';
 import IngredientModal from './IngredientModal.js';
 import SuggestionBox from './SuggestionBox.js';
+import AllIngredientsModal from './AllIngredientsModal.js';
 
 var globalSelf;
 
@@ -23,6 +24,7 @@ class App extends Component {
       ingModalOpen: false,
       ingModalName: '',
       ingModalLink: '',
+      allIngModalOpen: false,
       suggestions: [
         'simple syrup',
         'lemon juice',
@@ -135,19 +137,40 @@ class App extends Component {
           });
         }
       }
+    } else if (type === 'all') {
+      console.log('about to set state');
+      this.setState({
+        allIngModalOpen: true
+      });
     }
   }
 
-  closeModal () {
-    this.setState({
-      drinkModalOpen: false,
-      ingModalOpen: false
-    });
+  closeModal (type) {
+    if (type === 'drink') {
+      this.setState({
+        drinkModalOpen: false
+      });
+    } else if (type === 'ingredient') {
+      this.setState({
+        ingModalOpen: false
+      });
+    } else if (type === 'all') {
+      this.setState({
+        allIngModalOpen: false
+      });
+    }
   }
 
   render () {
     return (
       <div>
+        <AllIngredientsModal
+          isOpen={this.state.allIngModalOpen}
+          openModal={this.openModal}
+          closeModal={this.closeModal}
+          dimensions={this.state.dimensions}
+          addIngredient={this.addIngredient}
+        />
         <IngredientModal
           isOpen={this.state.ingModalOpen}
           ingName={this.state.ingModalName}

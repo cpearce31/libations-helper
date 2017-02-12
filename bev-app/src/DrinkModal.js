@@ -18,7 +18,9 @@ const DrinkModal = (props) => {
       contentLabel='drinkModal'
       style={modalStyle}
     >
-      <button onClick={props.closeModal}>X</button>
+      <button onClick={() => {
+        props.closeModal('drink');
+      }}>X</button>
       <h3>{props.drinkName}</h3>
       <ul>
         {Object.keys(props.amounts).map((key, i, obj) => {

@@ -27,6 +27,12 @@ class SearchBox extends Component {
     let key = 0;
     return (
       <div>
+        <button
+          onClick={() => {
+            this.props.openModal('all');
+            console.log('triggered it');
+          }}
+        >Browse All Ingredients</button>
         <form>
           <input style={inputStyle} type="text" onChange={this.handleInput}/>
         </form>
