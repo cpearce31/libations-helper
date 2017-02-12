@@ -16,12 +16,11 @@ const spanStyle = {
 };
 
 const Result = (props) => {
-  const style = Object.assign(resultStyle, props.style);
   if (props.isIngredient) {
     return (
       <div
         data-name={props.name}
-        style={style}
+        style={resultStyle}
         onClick={(event) => {
           props.openModal('ingredient', event.target);
         }}
@@ -39,7 +38,7 @@ const Result = (props) => {
   } else {
     return (
       <div
-        style={style}
+        style={resultStyle}
         data-name={props.name}
         onClick={(event) => {
           props.openModal('drink', event.target);
