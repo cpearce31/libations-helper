@@ -8,6 +8,7 @@ import {canIMake} from './helpers.js';
 import IngredientModal from './IngredientModal.js';
 import SuggestionBox from './SuggestionBox.js';
 import AllIngredientsModal from './AllIngredientsModal.js';
+import Radium from 'radium';
 
 var globalSelf;
 
@@ -163,55 +164,70 @@ class App extends Component {
 
   render () {
     return (
-      <div>
-        <AllIngredientsModal
-          isOpen={this.state.allIngModalOpen}
-          openModal={this.openModal}
-          closeModal={this.closeModal}
-          dimensions={this.state.dimensions}
-          addIngredient={this.addIngredient}
-        />
-        <IngredientModal
-          isOpen={this.state.ingModalOpen}
-          ingName={this.state.ingModalName}
-          url={this.state.ingModalLink}
-          closeModal={this.closeModal}
-          openModal={this.openModal}
-          dimensions={this.state.dimensions}
-        />
-        <DrinkModal
-          isOpen={this.state.drinkModalOpen}
-          drinkName={this.state.drinkModalName}
-          amounts={this.state.drinkModalAmounts}
-          procedure={this.state.drinkModalProcedure}
-          closeModal={this.closeModal}
-          dimensions={this.state.dimensions}
-        />
-        <SearchBox
-          addIngredient={this.addIngredient}
-          openModal={this.openModal}
-          dimensions={this.state.dimensions}
-        />
-        <Bar
-          bar={this.state.bar}
-          removeIngredient={this.removeIngredient}
-          openModal={this.openModal}
-          dimensions={this.state.dimensions}
-        />
-        <SuggestionBox
-          suggestions={this.state.suggestions}
-          removeSuggestion={this.removeSuggestion}
-          dimensions={this.state.dimensions}
-        />
-        <DrinksBox
-          openModal={this.openModal}
-          canMake={canIMake(this.state.bar, data.drinks).canMake}
-          cantMake={canIMake(this.state.bar, data.drinks).cantMake}
-          dimensions={this.state.dimensions}
-        />
+      <div style={wrapperStyle}>
+        <div style={style}>
+          <span></span>
+          <SearchBox
+            addIngredient={this.addIngredient}
+            openModal={this.openModal}
+            dimensions={this.state.dimensions}
+          />
+          <AllIngredientsModal
+            isOpen={this.state.allIngModalOpen}
+            openModal={this.openModal}
+            closeModal={this.closeModal}
+            dimensions={this.state.dimensions}
+            addIngredient={this.addIngredient}
+          />
+          <IngredientModal
+            isOpen={this.state.ingModalOpen}
+            ingName={this.state.ingModalName}
+            url={this.state.ingModalLink}
+            closeModal={this.closeModal}
+            openModal={this.openModal}
+            dimensions={this.state.dimensions}
+          />
+          <DrinkModal
+            isOpen={this.state.drinkModalOpen}
+            drinkName={this.state.drinkModalName}
+            amounts={this.state.drinkModalAmounts}
+            procedure={this.state.drinkModalProcedure}
+            closeModal={this.closeModal}
+            dimensions={this.state.dimensions}
+          />
+          <Bar
+            bar={this.state.bar}
+            removeIngredient={this.removeIngredient}
+            openModal={this.openModal}
+            dimensions={this.state.dimensions}
+          />
+          <SuggestionBox
+            suggestions={this.state.suggestions}
+            removeSuggestion={this.removeSuggestion}
+            dimensions={this.state.dimensions}
+          />
+          <DrinksBox
+            openModal={this.openModal}
+            canMake={canIMake(this.state.bar, data.drinks).canMake}
+            cantMake={canIMake(this.state.bar, data.drinks).cantMake}
+            dimensions={this.state.dimensions}
+          />
+        </div>
       </div>
     );
   }
 }
 
-export default App;
+const style = {
+  width: 1000,
+  backgroundColor: '#fff',
+  margin: '0 auto'
+};
+
+const wrapperStyle = {
+  width: '100%',
+  margin: 0,
+  backgroundColor: '#ffed00' // placeholder
+};
+
+export default Radium(App);
