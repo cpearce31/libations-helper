@@ -1,5 +1,6 @@
 import React from 'react';
-import Ingredient from './Ingredient';
+import Ingredient from './Ingredient.js';
+import SuggestionBox from './SuggestionBox.js'
 
 const Bar = (props) => {
   let key = 0;
@@ -19,6 +20,10 @@ const Bar = (props) => {
           );
         })}
       </div>
+      <SuggestionBox
+        suggestions={props.suggestions}
+        removeSuggestion={props.removeSuggestion}
+      />
     </div>
   );
 };

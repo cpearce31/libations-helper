@@ -28,15 +28,6 @@ const suggestions = [
   }
 ];
 
-const style = {
-  border: '1px solid gray',
-  padding: 5,
-  width: '90%',
-  margin: 5,
-  display: 'flex',
-  justifyContent: 'space-between'
-};
-
 const SuggestionBox = (props) => {
   const renderSuggestions = () => {
     let JSXResults = [];
@@ -45,7 +36,7 @@ const SuggestionBox = (props) => {
         if (props.suggestions.indexOf(suggestions[i].ingredients[j]) !== -1 &&
             JSXResults.length < 3) {
           JSXResults.push(
-            <div key={(i + 1) * (j + 2)} style={style}>
+            <div key={(i + 1) * (j + 2)}>
               <span>{suggestions[i].text}</span>
               <button
                 onClick={() => {

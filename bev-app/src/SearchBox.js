@@ -2,11 +2,6 @@ import React, {Component} from 'react';
 import {autocomplete} from './helpers.js';
 import Result from './Result.js';
 
-const inputStyle = {
-  width: 300,
-  padding: 10
-};
-
 class SearchBox extends Component {
 
   constructor (props) {
@@ -40,7 +35,7 @@ class SearchBox extends Component {
             }}
           >Browse All Ingredients</button>
           <form>
-            <input style={inputStyle} type="text" onChange={this.handleInput}/>
+            <input type="text" onChange={this.handleInput}/>
           </form>
           <div>
             {this.state.suggestions.map((elem) => {

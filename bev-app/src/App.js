@@ -8,7 +8,6 @@ import {canIMake} from './helpers.js';
 import IngredientModal from './IngredientModal.js';
 import SuggestionBox from './SuggestionBox.js';
 import AllIngredientsModal from './AllIngredientsModal.js';
-import Radium from 'radium';
 
 var globalSelf;
 
@@ -164,14 +163,8 @@ class App extends Component {
 
   render () {
     return (
-      <div style={wrapperStyle}>
-        <div style={style}>
-          <span></span>
-          <SearchBox
-            addIngredient={this.addIngredient}
-            openModal={this.openModal}
-            dimensions={this.state.dimensions}
-          />
+      <div>
+        <div>
           <AllIngredientsModal
             isOpen={this.state.allIngModalOpen}
             openModal={this.openModal}
@@ -195,39 +188,31 @@ class App extends Component {
             closeModal={this.closeModal}
             dimensions={this.state.dimensions}
           />
+        <div>
           <Bar
             bar={this.state.bar}
             removeIngredient={this.removeIngredient}
             openModal={this.openModal}
             dimensions={this.state.dimensions}
-          />
-          <SuggestionBox
             suggestions={this.state.suggestions}
             removeSuggestion={this.removeSuggestion}
-            dimensions={this.state.dimensions}
           />
-          <DrinksBox
+          <SearchBox
+            addIngredient={this.addIngredient}
             openModal={this.openModal}
-            canMake={canIMake(this.state.bar, data.drinks).canMake}
-            cantMake={canIMake(this.state.bar, data.drinks).cantMake}
             dimensions={this.state.dimensions}
           />
+        </div>
+        <DrinksBox
+          openModal={this.openModal}
+          canMake={canIMake(this.state.bar, data.drinks).canMake}
+          cantMake={canIMake(this.state.bar, data.drinks).cantMake}
+          dimensions={this.state.dimensions}
+        />
         </div>
       </div>
     );
   }
 }
 
-const style = {
-  width: 1000,
-  backgroundColor: '#fff',
-  margin: '0 auto'
-};
-
-const wrapperStyle = {
-  width: '100%',
-  margin: 0,
-  backgroundColor: '#ffed00' // placeholder
-};
-
-export default Radium(App);
+export default App;
