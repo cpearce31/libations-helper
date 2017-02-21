@@ -17,10 +17,14 @@ const DrinkModal = (props) => {
       isOpen={props.isOpen}
       contentLabel='drinkModal'
       style={modalStyle}
+      className='drink-modal modal'
+      overlayClassName='drink-modal-overlay modal-overlay'
     >
-      <button onClick={() => {
-        props.closeModal('drink');
-      }}>X</button>
+      <button
+        className='btn-close'
+        onClick={() => {
+          props.closeModal('drink');
+        }}>&#x2716;</button>
       <h3>{props.drinkName}</h3>
       <ul>
         {Object.keys(props.amounts).map((key, i, obj) => {

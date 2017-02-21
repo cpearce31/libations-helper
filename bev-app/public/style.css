@@ -1,3 +1,9 @@
+/*
+  main: #f7ee5d
+  background: #F7D55D
+  accent: #C9EB59
+*/
+
 .container {
   background-color: #F7D55D;
   width: 100%;
@@ -112,7 +118,7 @@
 }
 
 .bar-header {
-  margin: 0;
+  margin: 0 0 10px 0;
   border-bottom: 1px solid black;
 }
 
@@ -185,4 +191,38 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.drink:hover {
+  box-shadow: inset 0 0 40px 10px #f7ee5d;
+}
+
+.modal {
+  font-family: 'Raleway', sans-serif;
+  display: inline-block;
+  background-color: #f7ee5d;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.modal h3 {
+  font-size: 1.5em;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drink-modal-overlay {
+
 }
