@@ -36,9 +36,13 @@ const SuggestionBox = (props) => {
         if (props.suggestions.indexOf(suggestions[i].ingredients[j]) !== -1 &&
             JSXResults.length < 3) {
           JSXResults.push(
-            <div key={(i + 1) * (j + 2)}>
+            <div
+              key={(i + 1) * (j + 2)}
+              className='suggestion'
+            >
               <span>{suggestions[i].text}</span>
               <button
+                className='btn-close'
                 onClick={() => {
                   props.removeSuggestion(suggestions[i].ingredients);
                 }}

@@ -163,8 +163,8 @@ class App extends Component {
 
   render () {
     return (
-      <div>
-        <div>
+      <div className='container'>
+        <div className='inner-wrapper'>
           <AllIngredientsModal
             isOpen={this.state.allIngModalOpen}
             openModal={this.openModal}
@@ -188,7 +188,7 @@ class App extends Component {
             closeModal={this.closeModal}
             dimensions={this.state.dimensions}
           />
-        <div>
+        <div className='bar-wrapper'>
           <Bar
             bar={this.state.bar}
             removeIngredient={this.removeIngredient}

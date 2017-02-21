@@ -5,7 +5,7 @@ import SuggestionBox from './SuggestionBox.js'
 const Bar = (props) => {
   let key = 0;
   return (
-    <div>
+    <div className='bar'>
       <h2>My Bar:</h2>
       <div>
         {props.bar.map((elem) => {
