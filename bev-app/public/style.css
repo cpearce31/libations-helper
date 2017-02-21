@@ -2,6 +2,7 @@
   main: #f7ee5d
   background: #F7D55D
   accent: #C9EB59
+  accent2: #E8FAAB
 */
 
 .container {
@@ -223,6 +224,9 @@
   align-items: center;
 }
 
-.drink-modal-overlay {
-
+.modal-all-ingredients {
+  max-width: 500px;
+  width: 500px;
+  height: 80%;
+  overflow-y: scroll;
 }

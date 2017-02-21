@@ -22,10 +22,14 @@ const AllIngredientsModal = (props) => {
     <Modal
       contentLabel='all'
       isOpen={props.isOpen}
+      className='modal-all-ingredients modal'
+      overlayClassName='modal-overlay'
     >
-    <button onClick={() => {
-      props.closeModal('all');
-    }}>X</button>
+    <button
+      className='btn-close'
+      onClick={() => {
+        props.closeModal('all');
+      }}>&#x2716;</button>
       <h3>all ingredients</h3>
       {all}
     </Modal>

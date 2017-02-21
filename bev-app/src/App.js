@@ -128,15 +128,21 @@ class App extends Component {
         }
       }
     } else if (type === 'ingredient') {
+      let name = target.dataset.name;
+      if (target.className !== 'result') {
+        name = target.parentNode.dataset.name;
+      }
+      let index;
       for (let i = 0; i < data.ingredients.length; i++) {
-        if (data.ingredients[i].name === target.dataset.name) {
-          this.setState({
-            ingModalOpen: true,
-            ingModalName: data.ingredients[i].name,
-            ingModalLink: data.ingredients[i].link
-          });
+        if (data.ingredients[i].name === name) {
+          index = i;
         }
       }
+      this.setState({
+        ingModalName: name,
+        ingModalLink: data.ingredients[index].link,
+        ingModalOpen: true,
+      });
     } else if (type === 'all') {
       console.log('about to set state');
       this.setState({
@@ -146,6 +152,7 @@ class App extends Component {
   }
 
   closeModal (type) {
+    console.log('close modal triggered');
     if (type === 'drink') {
       this.setState({
         drinkModalOpen: false

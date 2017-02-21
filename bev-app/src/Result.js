@@ -6,8 +6,9 @@ const Result = (props) => {
       <div
         className='result'
         data-name={props.name}
-        onClick={(event) => {
-          props.openModal('ingredient', event.target);
+        onClick={(e) => {
+          console.log(e.target);
+          props.openModal('ingredient', e.target);
         }}
       >
         <span>{props.name}</span>

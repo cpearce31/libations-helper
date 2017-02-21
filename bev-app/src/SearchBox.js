@@ -37,10 +37,10 @@ class SearchBox extends Component {
             />
             <span>- or -</span>
               <button
+                type='button'
                 className='btn-browse btn'
                 onClick={() => {
                   this.props.openModal('all');
-                  console.log('triggered it');
                 }}
               >Browse All Ingredients</button>
           </form>
