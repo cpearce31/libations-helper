@@ -5,13 +5,14 @@ const Ingredient = (props) => {
     <div
       onClick={(event) => props.openModal('ingredient', event.target)}
       data-name={props.name}
+      className='bar-ingredient'
     >
       <span>{props.name}</span>
       <button
         type='button'
-        className='removeIngredient'
+        className='btn-close'
         onClick={(event) => props.removeIngredient(event.target)}
-      >X</button>
+      >&#x2716;</button>
     </div>
   );
 };

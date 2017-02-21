@@ -17,13 +17,13 @@ const DrinksBox = (props) => {
     );
   };
   return (
-    <div>
-      <h2>You can make:</h2>
-      <div>
+    <div className='drinks'>
+      <h2>Drinks you can make</h2>
+      <div className='drinks-section'>
         {props.canMake.map((constructDrink))}
       </div>
-      <h2>Almost there:</h2>
-      <div>
+      <h2>The rest</h2>
+      <div className='drinks-section'>
         {props.cantMake.map(constructDrink)}
       </div>
     </div>

@@ -1,6 +1,7 @@
 .container {
-  background-color: #f7ee5d;
+  background-color: #F7D55D;
   width: 100%;
+  font-family: 'Raleway', sans-serif;
 }
 
 .inner-wrapper {
@@ -13,20 +14,28 @@
   height: 500px;
 }
 
+.bar-wrapper {
+  background-color: #f7ee5d;
+  height: 500px;
+}
+
 .search-wrapper {
   margin: 0;
   width: 600px;
   height: 500px;
-  background-color: blue;
   float:right;
 }
 
 .bar {
   margin: 0;
-  width: 400px;
-  height: 500px;
-  background: red;
   float:left;
+  background-color: #C9EB59;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: calc(100% - 40px);
+  width: calc(400px - 40px);
 }
 
 .suggestion {
@@ -34,11 +43,6 @@
   margin: 10px;
   padding: 10px;
   display: flex;
-}
-
-.btn-close {
-  height: 25px;
-  width: 25px;
 }
 
 .search-header {
@@ -107,26 +111,78 @@
   text-align: right;
 }
 
-.bar {
-  position: relative;
-}
-
 .bar-header {
-  margin: 20px;
+  margin: 0;
   border-bottom: 1px solid black;
 }
 
 .suggestions-box {
-  max-height: 300px;
-  position: absolute;
-  bottom: 0;
 }
 
 .suggestion {
   background-color: #fff;
   padding: 5px;
+  margin: 5px 0;
 }
 
 .bar-list {
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-grow: 1;
+}
+
+.bar-list p {
+  color: #888;
+}
+
+.bar-ingredient {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  font-size: 1.3em;
+}
+
+.btn-close {
+  display: inline-block;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  background: #ff0000;
+  color: #fff;
+  padding: 0;
+  height: 18px;
+  width: 18px;
+  min-width: 18px;
+  text-align: center;
+  float: right;
+}
+
+.drinks {
+  background-color: #E8FAAB;
+  overflow: hidden;
+}
+
+.drinks h2 {
+  border-bottom: 1px solid black;
   margin: 20px;
+}
+
+.drinks-section {
+  min-height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;;
+}
+
+.drink {
+  height: 190px;
+  width: calc(25% - 42px);
+  margin: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }

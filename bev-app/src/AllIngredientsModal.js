@@ -1,5 +1,4 @@
 import React from 'react';
-import Radium from 'radium';
 import Modal from 'react-modal';
 import Result from './Result.js';
 import data from './data.js';
@@ -33,4 +32,4 @@ const AllIngredientsModal = (props) => {
   );
 };
 
-export default Radium(AllIngredientsModal);
+export default AllIngredientsModal;

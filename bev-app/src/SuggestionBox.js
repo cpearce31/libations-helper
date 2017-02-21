@@ -46,7 +46,7 @@ const SuggestionBox = (props) => {
                 onClick={() => {
                   props.removeSuggestion(suggestions[i].ingredients);
                 }}
-              >X</button>
+              >&#x2716;</button>
             </div>
           );
           break;
