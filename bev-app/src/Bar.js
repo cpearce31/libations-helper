@@ -6,8 +6,9 @@ const Bar = (props) => {
   let key = 0;
   return (
     <div className='bar'>
-      <h2>My Bar:</h2>
-      <div>
+      <h2 className='bar-header'>My Bar:</h2>
+      <div className='bar-list'>
+        {props.bar.length === 0 ? <p>Nothing here yet...</p> : null}
         {props.bar.map((elem) => {
           key++;
           return (

@@ -88,7 +88,7 @@ class App extends Component {
   }
 
   addIngredient (target) {
-    let ingredient = target.previousSibling.textContent;
+    let ingredient = target.dataset.ingredient;
     if (this.state.bar.indexOf(ingredient) === -1) {
       let newBar = this.state.bar.slice(0);
       this.removeSuggestion(ingredient);

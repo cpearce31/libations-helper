@@ -106,3 +106,27 @@
   display: inline-block;
   text-align: right;
 }
+
+.bar {
+  position: relative;
+}
+
+.bar-header {
+  margin: 20px;
+  border-bottom: 1px solid black;
+}
+
+.suggestions-box {
+  max-height: 300px;
+  position: absolute;
+  bottom: 0;
+}
+
+.suggestion {
+  background-color: #fff;
+  padding: 5px;
+}
+
+.bar-list {
+  margin: 20px;
+}

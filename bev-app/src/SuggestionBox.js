@@ -56,7 +56,7 @@ const SuggestionBox = (props) => {
     return JSXResults;
   };
   return (
-    <div>
+    <div className='suggestions-box'>
       {renderSuggestions()}
     </div>
   );

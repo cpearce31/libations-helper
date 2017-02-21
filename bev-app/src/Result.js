@@ -14,6 +14,7 @@ const Result = (props) => {
         <span className='result-descript'>Ingredient</span>
         <div className="btn-offset">
           <button
+            data-ingredient={props.name}
             onClick={(event) => {
               props.addIngredient(event.target);
             }}
