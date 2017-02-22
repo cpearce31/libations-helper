@@ -113,6 +113,7 @@ class App extends Component {
   }
 
   openModal (type, target) {
+    console.log(target);
     if (target.className === 'btn-add') {
       return;
     }

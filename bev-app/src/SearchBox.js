@@ -39,8 +39,8 @@ class SearchBox extends Component {
               <button
                 type='button'
                 className='btn-browse btn'
-                onClick={() => {
-                  this.props.openModal('all');
+                onClick={(e) => {
+                  this.props.openModal('all', e.target);
                 }}
               >Browse All Ingredients</button>
           </form>
