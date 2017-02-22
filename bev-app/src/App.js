@@ -113,8 +113,11 @@ class App extends Component {
   }
 
   openModal (type, target) {
+    if (target.className === 'btn-add') {
+      return;
+    }
     if (type === 'drink') {
-      if (target.className === 'drinkInfo') {
+      if (target.className !== 'result') {
         target = target.parentNode;
       }
       for (let i = 0; i < data.drinks.length; i++) {
@@ -141,10 +144,9 @@ class App extends Component {
       this.setState({
         ingModalName: name,
         ingModalLink: data.ingredients[index].link,
-        ingModalOpen: true,
+        ingModalOpen: true
       });
     } else if (type === 'all') {
-      console.log('about to set state');
       this.setState({
         allIngModalOpen: true
       });
@@ -152,7 +154,6 @@ class App extends Component {
   }
 
   closeModal (type) {
-    console.log('close modal triggered');
     if (type === 'drink') {
       this.setState({
         drinkModalOpen: false

@@ -7,7 +7,6 @@ const Result = (props) => {
         className='result'
         data-name={props.name}
         onClick={(e) => {
-          console.log(e.target);
           props.openModal('ingredient', e.target);
         }}
       >
@@ -15,6 +14,7 @@ const Result = (props) => {
         <span className='result-descript'>Ingredient</span>
         <div className="btn-offset">
           <button
+            className='btn-add'
             data-ingredient={props.name}
             onClick={(event) => {
               props.addIngredient(event.target);
