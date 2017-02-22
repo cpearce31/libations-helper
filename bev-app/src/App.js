@@ -117,9 +117,10 @@ class App extends Component {
       return;
     }
     if (type === 'drink') {
-      if (target.className !== 'result') {
+      if (target.className !== 'result' || 'drink') {
         target = target.parentNode;
       }
+      console.log(target);
       for (let i = 0; i < data.drinks.length; i++) {
         if (data.drinks[i].name === target.dataset.name) {
           this.setState({
