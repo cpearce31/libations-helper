@@ -198,7 +198,7 @@ class App extends Component {
             closeModal={this.closeModal}
             dimensions={this.state.dimensions}
           />
-        <div className='bar-wrapper'>
+        <div className='bar-search-wrapper'>
           <Bar
             bar={this.state.bar}
             removeIngredient={this.removeIngredient}
@@ -212,7 +212,7 @@ class App extends Component {
             openModal={this.openModal}
             dimensions={this.state.dimensions}
           />
-        </div>
+      </div>
         <DrinksBox
           openModal={this.openModal}
           canMake={canIMake(this.state.bar, data.drinks).canMake}
