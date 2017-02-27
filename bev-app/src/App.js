@@ -114,7 +114,8 @@ class App extends Component {
 
   openModal (type, target) {
     console.log(target);
-    if (target.className === 'btn-add') {
+    if (target.className === 'btn-add' ||
+        target.className === 'btn-close') {
       return;
     }
     if (type === 'drink') {
